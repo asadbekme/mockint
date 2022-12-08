@@ -1,0 +1,256 @@
+@import '../../scss/variables';
+
+#header-placeholder {
+  width: 100%;
+  height: 78px;
+}
+
+.header {
+  background: $header-main-bg-gradient;
+  position: relative;
+
+  .container {
+    position: relative;
+  }
+
+  &__navbar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 20px 0;
+    transition: position .7s cubic-bezier(.55, .06, .68, .19);
+
+    &.fixed--navbar {
+      background: rgba(3, 68, 18, 0.8);
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.19);
+      backdrop-filter: blur(7.5px);
+    }
+
+    &-inner {
+      width: 100%;
+      position: relative;
+      z-index: 100;
+      @include flex(space-between, center, row);
+    }
+  }
+
+  &__logo {
+    @include responsive(xs) {
+      width: 170px;
+    }
+
+    @include responsive(xxs) {
+      width: 150px;
+    }
+  }
+
+  &__navigation {
+    @include flex(space-between, center, row);
+
+    &-links {
+      @include flex(space-between, center, row);
+    }
+
+    &-item {
+      margin: 0 20px;
+      @include center;
+      position: relative;
+
+      &::after {
+        width: 0%;
+        height: 2px;
+        background-color: $secondary-color;
+        position: absolute;
+        bottom: -6px;
+        content: '';
+        transform-origin: center;
+        transition: .4s ease;
+      }
+
+      &:hover {
+        &::after {
+          width: 48%;
+        }
+      }
+
+      &.active--item {
+        &::after {
+          width: 48%;
+        }
+      }
+
+      @include responsive(lg) {
+        margin: 0 14px;
+      }
+    }
+
+    &-link {
+      color: $secondary-color;
+      font-weight: 700;
+
+      @include responsive(md) {
+        font-size: 14px;
+      }
+    }
+
+    // * Media queries
+    @media (max-width: 900px) {
+      position: absolute;
+      height: 100vh;
+      width: 60%;
+      background: rgba(0, 0, 0, 0.76);
+      backdrop-filter: blur(5px);
+      top: -20px;
+      right: -100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 20px 25px;
+      transition: right .8s ease;
+
+      &.open {
+        right: -30px;
+      }
+
+      &-links {
+        padding-top: 150px;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &-item {
+        margin: 0;
+        margin-bottom: 40px;
+      }
+
+      &-link {
+        font-size: 22px;
+        font-weight: 700;
+      }
+    }
+
+    @include responsive(sm) {
+      width: 100vw;
+      justify-content: center;
+      right: -150%;
+
+
+      &-links {
+          padding-top: 0;
+      }
+  }
+
+    @include responsive(xs) {
+      &.open {
+        right: -20px;
+      }
+    }
+
+    @include responsive(xxs) {
+      &.open {
+        right: -15px;
+      }
+
+      &-link {
+        font-size: 20px;
+      }
+
+      &-links {
+        padding-top: 10%;
+      }
+
+      &-item {
+        margin-bottom: 30px;
+      }
+    }
+
+    @include responsive(ss) {
+      &-links {
+        padding-top: 28%;
+      }
+    }
+  }
+
+  &__language {
+    @include flex(space-between, center, row);
+    gap: 6px;
+    margin-left: 34px;
+    display: none;
+
+    span {
+      font-weight: 700;
+    }
+
+    @media (max-width:900px) {
+      margin: 0;
+      margin-top: 20px;
+
+      span {
+        font-size: 22px
+      }
+    }
+
+    @include responsive(xxs) {
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .navbar__open-icon {
+    display: none !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    img {
+      width: 44px;
+    }
+
+    @media (max-width: 900px) {
+      display: flex !important;
+    }
+
+    @include responsive(xs) {
+      img {
+        width: 40px;
+      }
+    }
+
+    @include responsive(xxs) {
+      img {
+        width: 38px;
+      }
+    }
+}
+
+  .navbar__close-icon {
+    cursor: pointer;
+    display: none !important;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 11px;
+    background: $primary-color;
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
+    svg {
+      width: 38px;
+      height: 38px;
+    }
+
+    @media (max-width: 900px) {
+      display: flex !important;
+    }
+
+    @include responsive(xxs) {
+      svg {
+        width: 35px;
+        height: 32px;
+      }
+    }
+  }
+}
