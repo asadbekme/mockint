@@ -17,11 +17,11 @@ const Navbar = () => {
         <div className="container">
           <div className="header__navbar-inner">
             <a href="#home">
-              <img src={siteLogo} alt="MockInt Logo" className='header__logo' />
+              <img className='header__logo' src={siteLogo} alt="MockInt Logo" />
             </a>
 
             <nav className={isMenuBarOpen ? 'header__navigation open' : 'header__navigation'}>
-              <div onClick={() => setIsMenuBarOpen(false)} className='navbar__close-icon'>
+              <div className='navbar__close-icon' onClick={() => setIsMenuBarOpen(false)}>
                 <HiChevronRight />
               </div>
               <ul className='header__navigation-links'>
@@ -30,15 +30,15 @@ const Navbar = () => {
                     const { id, url, text } = link;
                     return (
                       <li
-                        key={id}
                         className='header__navigation-item'
+                        key={id}
                         onClick={() => setIsMenuBarOpen(false)}
                       >
                         <a href={url} className='header__navigation-link'>
                           {text}
                         </a>
                       </li>
-                    )
+                    );
                   })
                 }
               </ul>
@@ -48,14 +48,14 @@ const Navbar = () => {
               </div>
             </nav>
 
-            <div onClick={() => setIsMenuBarOpen(true)} className='navbar__open-icon'>
+            <div className='navbar__open-icon' onClick={() => setIsMenuBarOpen(true)}>
               <img src={menuBarIcon} alt="menubar icon" />
             </div>
           </div>
         </div>
       </div>
     </>
-  );
+  );    
 }
 
 export default Navbar;

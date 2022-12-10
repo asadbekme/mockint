@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className='header' id='home'>
       <Navbar />
-      {/* <Hero /> */}
+      <Hero />
     </header>
   );
 }
