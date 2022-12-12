@@ -28,19 +28,19 @@
   }
 
   &__info {
+    @include flex(column, flex-start, flex-start);
     max-width: 800px;
-    @include flex(flex-start, flex-start, column);
     position: relative;
     z-index: 100;
 
     &-items {
-      @include flex(flex-start, center, row);
+      @include flex(row, flex-start, center);
       gap: 65px;
-      margin-top: 102px;
+      margin-bottom: 102px;
 
       @include responsive(sm) {
-        justify-content: center;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 20px;
         margin: 0 auto;
         margin-bottom: 50px;
@@ -54,7 +54,7 @@
 
     &-item {
       gap: 4px;
-      @include flex(flex-start, flex-start, column);
+      @include flex(column, flex-start, flex-start);
 
       h5 {
         font-weight: 700;
@@ -76,11 +76,11 @@
     }
 
     &-main {
-      @include flex(flex-start, flex-start, column);
+      @include flex(column, flex-start, flex-start);
 
       @include responsive(sm) {
-        align-items: center;
         justify-content: center;
+        align-items: center;
         text-align: center;
       }
 
@@ -159,5 +159,33 @@
     @include responsive(xs) {
       opacity: 0.3;
     }
-}
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 35px;
+    transform: translateX(-50%);
+    left: 50%;
+
+    svg {
+      height: 28px;
+      width: 28px;
+      color: $secondary-color;
+      animation: animateIcon 2.3s ease infinite;
+    }
+  }
+
+  @keyframes animateIcon {
+    0% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(17px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
 }

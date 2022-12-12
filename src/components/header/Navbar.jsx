@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { HiChevronRight } from 'react-icons/hi';
 import { headerNavigationItems as links } from '../../utils/constants';
 import siteLogo from '../../images/site-logo.svg';
@@ -8,6 +8,12 @@ import menuBarIcon from '../../images/menu-bar-icon.png';
 const Navbar = () => {
   const [isFixedNavbar, setIsFixedNavbar] = useState(false);
   const [isMenuBarOpen, setIsMenuBarOpen] = useState(false);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      (window.scrollY > 5) ? setIsFixedNavbar(true) : setIsFixedNavbar(false);
+    }
+  }, [])
 
   return (
     <>

@@ -1,9 +1,9 @@
 // * Basic mixins
-@mixin flex($jc: flex-start, $ai: flex-start, $dr: row) {
+@mixin flex($dr: row, $jc: flex-start, $ai: flex-start) {
   display: flex;
+  flex-direction: $dr;
   justify-content: $jc;
   align-items: $ai;
-  flex-direction: $dr;
 }
   
 @mixin center {
@@ -25,10 +25,11 @@
 
 .button-effect {
   transition: all .4s ease;
-    &:hover {
-      transform: scale(1.095);
-      border-radius: 6px;
-    }
+
+  &:hover {
+    transform: scale(1.095);
+    border-radius: 6px;
+  }
 }
     
 // * Responsive media mixins

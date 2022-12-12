@@ -31,7 +31,7 @@
       width: 100%;
       position: relative;
       z-index: 100;
-      @include flex(space-between, center, row);
+      @include flex(row, space-between, center);
     }
   }
 
@@ -46,10 +46,10 @@
   }
 
   &__navigation {
-    @include flex(space-between, center, row);
+    @include flex(row, space-between, center);
 
     &-links {
-      @include flex(space-between, center, row);
+      @include flex(row, space-between, center);
     }
 
     &-item {
@@ -173,7 +173,7 @@
   }
 
   &__language {
-    @include flex(space-between, center, row);
+    @include flex(row, space-between, center);
     gap: 6px;
     margin-left: 34px;
     display: none;
