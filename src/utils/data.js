@@ -6,7 +6,7 @@ const directionsCards = [
     names: ["UMAR SADULLAEV"],
     src: "../images/angular-icon.svg",
     description:
-      `Ushbu yo'nalish Angular freymvorkiga bag'ishlangan. Angularning o'zini so'ralishi bilan bir qatorda, biroz TypeScript va RxJS kutubxonalaridan ham savollar darajaga qarab so'raladi.`
+      "Ushbu yo'nalish Angular freymvorkiga bag'ishlangan. Angularning o'zini so'ralishi bilan bir qatorda, biroz TypeScript va RxJS kutubxonalaridan ham savollar darajaga qarab so'raladi.",
   },
   {
     id: 1,
@@ -64,6 +64,22 @@ const directionsCards = [
     description:
       "Ushbu yo'nalish Vue.js dasturchilari uchun mo'ljallangan. Yo'nalishda VueJs, VueRouter, NuxtJS, Vuex va shu kabi texnologiyalardan savollar bo'lishini kutishingiz mumkin.",
   },
+  {
+    id: 8,
+    title: "PRODUCT/UX/UI DESIGN",
+    names: ["BOBUR MAVLONOV"],
+    src: "../images/design-icon.svg",
+    description:
+      "Ushbu yo'nalish Product/UX/UI dizaynerlari uchun mo'ljallangan. Yo'nalishga topshirishda intervyu uchun avval qilgan ishlaringizdan namuna kerak bo'ladi.",
+  },
+  {
+    id: 9,
+    title: ".NET",
+    names: ["Mukhammadkarim Tukhtaboev"],
+    src: "../images/dotnet.svg",
+    description:
+      "Bu yo'nalish .NET bo'lib, bunda .NET, ASP.NET, Patterns, SQL databases, RabbitMQ, Testing, Docker kabi texnologiya va mavzulardan savollar bo'ladi.",
+  },
 ];
   
 // * About Cards
@@ -76,12 +92,12 @@ const aboutCards = [
   {
     id: 1,
     src: "./images/about-card-2.png",
-    text: `INTERVYU NATIJASIGA QARAB NOMZODGA KERAKLI FEEDBACK’LAR BERISH`,
+    text: `INTERVYU NATIJASIGA QARAB NOMZODGA KERAKLI FEEDBACK'LAR BERISH`,
   },
   {
     id: 2,
     src: "./images/about-card-3.png",
-    text: `O’ZBEKISTONDA INTERVYULAR O’TKAZISH ORQALI DASTURCHILAR SAVIYASINI OSHIRISH`,
+    text: `O'ZBEKISTONDA INTERVYULAR O'TKAZISH ORQALI DASTURCHILAR SAVIYASINI OSHIRISH`,
   },
   {
     id: 3,
@@ -94,7 +110,7 @@ const aboutCards = [
 const specialistsCards = [
   {
     id: 0,
-    src: "./images/Umar.png",
+    src: "../images/umar.png",
     url: "https://www.linkedin.com/in/joshdeveloper/",
     stacks: ["Angular", "Frontend"],
     name: "Umar Sadullayev",
@@ -105,7 +121,7 @@ const specialistsCards = [
   },
   {
     id: 1,
-    src: "./images/mabrur.jpg",
+    src: "../images/mabrur.jpg",
     url: "https://www.linkedin.com/in/mabrurdev/",
     stacks: ["NodeJS", "Backend"],
     name: "Mabrur Khayitboev",
@@ -116,7 +132,7 @@ const specialistsCards = [
   },
   {
     id: 2,
-    src: "./images/bobosher.jpg",
+    src: "../images/bobosher.jpg",
     url: "https://linkedin.com/in/bobosher-musurmonov",
     stacks: ["Python", "Backend"],
     name: "Bobosher Musurmonov",
@@ -127,7 +143,7 @@ const specialistsCards = [
   },
   {
     id: 3,
-    src: "./images/mirjalol.jpg",
+    src: "../images/mirjalol.jpg",
     url: "https://www.linkedin.com/in/mirjalolnorkulov/",
     stacks: ["Vue JS", "Frontend"],
     name: "Mirjalol Norqulov",
@@ -138,7 +154,7 @@ const specialistsCards = [
   },
   {
     id: 4,
-    src: "./images/axrorxoja.jpg",
+    src: "../images/axrorxoja.jpg",
     url: "https://www.linkedin.com/in/axrorxoja-yodgorov",
     stacks: ["Mobile", "Android"],
     name: "Axrorxo'ja Yodgorov",
@@ -149,7 +165,7 @@ const specialistsCards = [
   },
   {
     id: 5,
-    src: "./images/muhammadrasul.jpg",
+    src: "../images/muhammadrasul.jpg",
     url: "https://www.linkedin.com/in/nurmukhamedov/",
     stacks: ["React", "Frontend"],
     name: "Muhammadrasul Nurmukhamedov",
@@ -160,7 +176,7 @@ const specialistsCards = [
   },
   {
     id: 6,
-    src: "./images/azizbek.jpg",
+    src: "../images/azizbek.jpg",
     url: "https://www.linkedin.com/in/jonybekov/",
     stacks: ["React", "Frontend"],
     name: "Azizbek Jonibekov",
@@ -171,7 +187,7 @@ const specialistsCards = [
   },
   {
     id: 7,
-    src: "./images/yusuf.jpg",
+    src: "../images/yusuf.jpg",
     url: "https://www.linkedin.com/in/yusuf-murodov/",
     stacks: ["Java", "Backend"],
     name: "Yusuf Murodov",
@@ -182,7 +198,7 @@ const specialistsCards = [
   },
   {
     id: 8,
-    src: "./images/otabek.jpg",
+    src: "../images/otabek.jpg",
     url: "https://www.linkedin.com/in/otabek-rizakulov/",
     stacks: ["ReactJS", "Frontend"],
     name: "Otabek",
@@ -191,19 +207,41 @@ const specialistsCards = [
     level: "Junior - Middle",
     socialSrc: "./images/linkedin-icon.svg",
   },
+  {
+    id: 9,
+    src: "../images/bobur.jpg",
+    url: "https://www.linkedin.com/in/boburjon/",
+    stacks: ["Product Design", "UX/UI Design"],
+    name: "Bobur Mavlonov",
+    job: "Product designer",
+    experience: "1.5 yil+",
+    level: "Junior - Middle",
+    socialSrc: "./images/linkedin-icon.svg",
+  },
+  {
+    id: 10,
+    src: "../images/muhammadkarim.jpg",
+    url: "https://www.linkedin.com/in/mukhammadkarim-tukhtaboev",
+    stacks: ["Backend", ".NET"],
+    name: "Mukhammadkarim Tukhtaboev",
+    job: "Senior Software Engineer",
+    experience: "6 yil+",
+    level: "Junior - Middle - Senior",
+    socialSrc: "./images/linkedin-icon.svg",
+  },
 ];
   
 // * Interview Cards
 const interviewCards = [
   {
     id: 0,
-    title: "YO’NALISH TANLANG",
-    description: "O’Z YO’NALISHINGIZNI TANLANG VA SAYTDAGI 'FAQ' BO'LIMI BILAN ALOHIDA TANISHING"
+    title: "YO'NALISH TANLANG",
+    description: "O'Z YO'NALISHINGIZNI TANLANG VA SAYTDAGI 'FAQ' BO'LIMI BILAN ALOHIDA TANISHING"
   },
   {
     id: 1,
-    title: "ADMINSTRATORGA BOG’LANING ",
-    description: "SHARTLAR BILAN TANISHGANINGIZDAN SO’NG ADMINGA BOG’LANING VA SUHBATNI REJALASHTIRING"
+    title: "ADMINSTRATORGA BOG'LANING ",
+    description: "SHARTLAR BILAN TANISHGANINGIZDAN SO'NG ADMINGA BOG'LANING VA SUHBATNI REJALASHTIRING"
   },
   {
     id: 2,
@@ -213,7 +251,7 @@ const interviewCards = [
   {
     id: 3,
     title: "INTERVYU NATIJASI",
-    description: "SUHBATDAN SO’NG MUTAXASSIS SIZGA 3 KUN ICHIDA FEEDBACK BERADI VA DARAJANGIZ ANIQLANADI"
+    description: "SUHBATDAN SO'NG MUTAXASSIS SIZGA 3 KUN ICHIDA FEEDBACK BERADI VA DARAJANGIZ ANIQLANADI"
   },
 ];
 
@@ -284,5 +322,24 @@ const accordionItems = [
     description: `INTERVYULAR YOZIB OLINISH OLINMASLIGI MUTAXASSIS O'Z XOHISHI. KANDIDAT SO'RASHGA HAQLI, MUTAXASSIS ROZI BO'LSA YOZIB OLINADI. BA'ZI INTERVYULAR MOCKINT.UZ TOMONIDAN YOUTUBE'GA HAM JOYLANIB TURISHI MUMKIN.`
   },
 ];
+
+const partnersItems = [
+  {
+    id: 0,
+    src: "../images/robocode-logo.svg",
+    title: "Robocode"
+  },
+  {
+    id: 1,
+    src: "../images/webbrain-academy-logo.svg",
+    title: "Webbrain Academy"
+  },
+  {
+    id: 2,
+    src: "../images/mohirdev-logo.png",
+    title: "Mohirdev"
+  },
+];
   
-export { directionsCards, specialistsCards, aboutCards, interviewCards, interviewPrices, accordionItems };
+// * Export
+export { directionsCards, specialistsCards, aboutCards, interviewCards, interviewPrices, accordionItems, partnersItems };

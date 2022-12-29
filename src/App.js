@@ -1,11 +1,5 @@
 import React from 'react';
-import Header from './components/header/Header'
-import Directions from './components/directions/Directions'
-import About from './components/about/About'
-import Video from './components/video/Video'
-import Specialists from './components/specialists/Specialists'
-import FAQ from './components/FAQ/FAQ'
-import Footer from './components/footer/Footer'
+import { About, Directions, FAQ, Footer, Header, Partners, Specialists, Video } from './components';
 
 const App = () => {
   return (
@@ -18,6 +12,7 @@ const App = () => {
         <Video />
         <Specialists />
         <FAQ />
+        <Partners />
       </main>
 
       <Footer />

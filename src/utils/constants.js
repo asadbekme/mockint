@@ -3,7 +3,7 @@ const headerNavigationItems = [
   {
     id: 0,
     url: "#directions",
-    text: "YO’NALISHLAR",
+    text: "YO'NALISHLAR",
     isActive: true,
   },
   {
@@ -21,8 +21,8 @@ const headerNavigationItems = [
   {
     id: 3,
     url: "#interview",
-    isActive: false,
     text: "INTERVYU",
+    isActive: false,
   },
   {
     id: 4,
@@ -54,12 +54,12 @@ const footerSocialLinks = [
 // * Hero Info Items
 const heroInfoItems = [
   {
-    title: "YO’NALISHLAR:",
-    subtitle: "8 TA (KO’PAYIB BORADI)",
+    title: "YO'NALISHLAR:",
+    subtitle: "8 TA (KO'PAYIB BORADI)",
   },
   {
     title: "MUTAXASSISLAR:",
-    subtitle: "9 TA (KO’PAYIB BORADI)",
+    subtitle: "9 TA (KO'PAYIB BORADI)",
   },
   {
     title: "SUHBAT DAVOMIYLIGI:",
@@ -72,23 +72,27 @@ const modalTexts = {
   texts: [
     {
       id: 0,
-      content: "EMAIL",
+      content: "Ism",
     },
     {
       id: 1,
-      content: "INTERVYU YO'NALISHI",
+      content: "Email",
     },
     {
       id: 2,
-      content: "DARAJASI",
+      content: "Intervyu yo'nalishi",
     },
     {
       id: 3,
-      content: "INTERVYU TILI(Ingliz yoki O'zbek)",
+      content: "Darajasi",
     },
     {
       id: 4,
-      content: "TAJRIBANGIZ(OY YOKI YILLARDA)",
+      content: "Intervyu tili",
+    },
+    {
+      id: 5,
+      content: "Tajribangiz",
     },
   ],
 
@@ -97,7 +101,7 @@ const modalTexts = {
   
 const modalCardContent = `
   1. EMAIL - 
-  2. INTERVYU YO’NALISHI - 
+  2. INTERVYU YO'NALISHI - 
   3. INTERVYU DARAJASI - 
   4. INTERVYU TILI(Ingliz yoki O'zbek) -
   5. TAJRIBANGIZ(OY YOKI YILLARDA) -
