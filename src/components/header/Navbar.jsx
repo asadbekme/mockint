@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { HiChevronRight } from 'react-icons/hi';
 import { headerNavigationItems as links } from '../../utils/constants';
 import siteLogo from '../../images/site-logo.svg';
-import headerDownIcon from '../../images/header-down-icon.svg';
 import menuBarIcon from '../../images/menu-bar-icon.png';
+import { IoExitOutline } from 'react-icons/io5';
 
 const Navbar = () => {
   const [isFixedNavbar, setIsFixedNavbar] = useState(false);
@@ -17,30 +16,28 @@ const Navbar = () => {
 
   return (
     <>
-      <div id='header-placeholder'></div>
+      <div id="header-placeholder"></div>
       
       <div className={isFixedNavbar ? 'header__navbar fixed--navbar' : 'header__navbar'}>
         <div className="container">
           <div className="header__navbar-inner">
             <a href="#home">
-              <img className='header__logo' src={siteLogo} alt="MockInt Logo" />
+              <img className="header__logo" src={siteLogo} alt="MockInt" />
             </a>
 
             <nav className={isMenuBarOpen ? 'header__navigation open' : 'header__navigation'}>
-              <div className='navbar__close-icon' onClick={() => setIsMenuBarOpen(false)}>
-                <HiChevronRight />
-              </div>
-              <ul className='header__navigation-links'>
+              <ul className="header__navigation-links">
                 {
                   links.map((link) => {
                     const { id, url, text } = link;
+
                     return (
-                      <li
-                        className='header__navigation-item'
-                        key={id}
+                      <li 
                         onClick={() => setIsMenuBarOpen(false)}
+                        key={id}
+                        className="header__navigation-item"
                       >
-                        <a href={url} className='header__navigation-link'>
+                        <a href={url} className="header__navigation-link">
                           {text}
                         </a>
                       </li>
@@ -48,20 +45,41 @@ const Navbar = () => {
                   })
                 }
               </ul>
-              <div className='header__language'>
-                <span>UZ</span>
-                <img src={headerDownIcon} alt="header down icon" />
-              </div>
             </nav>
 
-            <div className='navbar__open-icon' onClick={() => setIsMenuBarOpen(true)}>
+            <div
+              className='navbar__open-icon'
+              onClick={() => setIsMenuBarOpen(true)}
+            >
               <img src={menuBarIcon} alt="menubar icon" />
             </div>
           </div>
         </div>
+        
+        <nav className={`header__navigation-mobile ${isMenuBarOpen && "open"}`}>
+          <div onClick={() => setIsMenuBarOpen(false)} className="navbar__close-icon">
+            <IoExitOutline />
+          </div>
+          <ul className="header__navigation-links">
+            {links.map((link) => {
+              const { id, url, text } = link;
+              return (
+                <li
+                  onClick={() => setIsMenuBarOpen(false)}
+                  key={id}
+                  className="header__navigation-item"
+                >
+                  <a href={url} className="header__navigation-link">
+                    {text}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </nav>
       </div>
     </>
-  );    
+  );
 }
 
 export default Navbar;

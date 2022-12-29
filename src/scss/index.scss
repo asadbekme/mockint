@@ -1,4 +1,4 @@
-// * Imports
+// * Import
 @import "./variables";
 @import "./typography";
 
@@ -9,6 +9,23 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(243, 239, 239);
+}
+
+::-webkit-scrollbar-thumb {
+  background: $primary-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: green;
 }
 
 html {
@@ -17,28 +34,28 @@ html {
   box-sizing: inherit;
 }
 
-body{
+body {
   box-sizing: border-box;
   overflow-x: hidden !important;
-  font-family: $font-family;
   font-weight: $font-weight;
   font-size: $font-size;
-  color: $color;
   line-height: $line-height;
+  color: $color;
+  font-family: $font-family;
 }
 
-.container{
+.container {
   max-width: 1206px;
   margin: 0 auto;
-  width: 100%;
   padding: 0 30px;
+  width: 100%;
 
   @include responsive(xs) {
     padding: 0 20px;
   }
 
   @include responsive(xxs) {
-    padding: 0 15px;
+    padding: 0 15px;  
   }
 }
 
