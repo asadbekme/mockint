@@ -60,6 +60,7 @@ const Navbar = () => {
           <div onClick={() => setIsMenuBarOpen(false)} className="navbar__close-icon">
             <IoExitOutline />
           </div>
+          
           <ul className="header__navigation-links">
             {links.map((link) => {
               const { id, url, text } = link;

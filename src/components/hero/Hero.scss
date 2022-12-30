@@ -28,13 +28,13 @@
   }
 
   &__info {
-    @include flex(column, flex-start, flex-start);
+    @include flex(column, nowrap, flex-start, flex-start);
     max-width: 800px;
     position: relative;
     z-index: 100;
 
     &-items {
-      @include flex(row, flex-start, center);
+      @include flex(row, nowrap, flex-start, center);
       gap: 65px;
       margin-bottom: 102px;
 
@@ -54,10 +54,10 @@
 
     &-item {
       gap: 4px;
-      @include flex(column, flex-start, flex-start);
+      @include flex(column, nowrap, flex-start, flex-start);
 
       h5 {
-        font-weight: 700;
+        font-weight: $second-font-weight;
       }
 
       p {
@@ -76,7 +76,7 @@
     }
 
     &-main {
-      @include flex(column, flex-start, flex-start);
+      @include flex(column, nowrap, flex-start, flex-start);
 
       @include responsive(sm) {
         justify-content: center;
@@ -108,7 +108,7 @@
     margin-bottom: 29px;
     font-size: 16px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: $font-weight;
   }
 
   &__button {
@@ -119,15 +119,15 @@
     color: $primary-color;
     font-weight: 700;
     max-width: 278px;
-    border: 1px solid #12aa2e;
+    border: 1px solid $green-color;
     border-radius: 25px;
     transition: all .4s ease;
-    box-shadow: 0px 0px 9px #fff;
+    box-shadow: 0px 0px 9px $secondary-color;
 
     &:hover {
       background-color: $primary-color;
       color: $secondary-color;
-      box-shadow: 0 0 100px 1px #fff;
+      box-shadow: 0 0 100px 1px $secondary-color;
     }
   }
 

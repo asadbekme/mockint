@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { directionsCards as cards } from '../../utils/data';
 import './Directions.scss';
 import DirectionsCard from './DirectionsCard';
 
 const Directions = () => {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
   return (
     <section className='directions' id='directions'>
       <div className="container">
         <div className="directions__content">
           <div className="directions__header">
-            <h2>YO‘NALISHLAR</h2>
-            <h5>O’ZINGIZGA MOS YO’NALISHNI TANLAB, BILIMINGIZNI SINAB KO’RING</h5>
+            <h2>YO'NALISHLAR</h2>
+            <h5>O'ZINGIZGA MOS YO'NALISHNI TANLAB, BILIMINGIZNI SINAB KO'RING</h5>
           </div>
 
           <div className="directions__cards">
@@ -25,6 +27,7 @@ const Directions = () => {
                     title={title}
                     description={description}
                     src={src}
+                    setIsOpenModal={setIsOpenModal}
                   />
                 );
               })

@@ -1,0 +1,218 @@
+@import "../../scss/variables";
+
+.directions {
+  background-color: $secondary-color;
+  padding: 50px 0 128px 0;
+
+  @include responsive(xs) {
+    padding-bottom: 100px;
+  }
+
+  @include responsive(xxs) {
+    padding-bottom: 80px;
+  }
+
+  &__content {
+    width: 100%;
+    @include flex(column, nowrap, center, center);
+  }
+ 
+  &__header {
+    @include flex(column, nowrap, center, center);
+    max-width: 360px;
+    margin: 0 auto;
+    gap: 8px;
+    text-align: center;
+    margin-bottom: 80px;
+
+    @include responsive(xs) {
+      margin-bottom: 50px;
+    }
+
+    @include responsive(xxs) {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: $primary-color;
+
+      @include responsive(sm) {
+        font-size: 32px;
+      }
+
+      @include responsive(xs) {
+        font-size: 26px;
+      }
+
+      @include responsive(xxs) {
+        font-size: 22px;
+      }
+    }
+
+    h5 {
+      color: $primary-color;
+      font-size: 18px;
+      font-weight: $font-weight;
+      line-height: 20px;
+
+      @include responsive(xxs) {
+        font-size: 16px;
+      }
+    }
+  } 
+
+  &__cards {
+    @include flex(row, wrap, center, center);
+    gap: 20px;
+    width: 100%;
+
+    @include responsive(md) {
+      flex-direction: column;
+    }
+  } 
+
+  &__card {
+    background: $primary-bg-gradient;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    flex-basis: 48%;
+    min-height: 290px;
+
+    @include responsive(md) {
+      flex-basis: none;
+      margin-inline: auto;
+      max-width: 550px;
+      width: 100%;
+
+      &-main{
+        min-height: inherit;
+      }
+    }
+
+    @include responsive(xs) {
+      min-height: 230px;
+
+      &-main {
+        min-height: inherit;
+      }
+    }
+
+    @include responsive(xxs) {
+      max-height: 190px;
+      height: 100%;
+
+      &-main {
+        max-height: inherit;
+      }
+    }
+
+    &-main {
+      @include flex(column, nowrap, space-between, center);
+      padding: 30px;
+      width: 100%;
+      height: 100%;
+      min-height: inherit;
+
+      @include responsive(xs) {
+        padding: 22px 16px;
+      }
+    }
+
+    &-header {
+      @include flex(row, nowrap, space-between, center);
+      width: 100%;
+      padding-bottom: 82px;
+
+      h2 {
+        font-size: 40px;
+        font-weight: $second-font-weight;
+
+        @include responsive(sm) {
+          font-size: 32px;
+        }
+
+        @include responsive(xs) {
+          font-size: 22px;
+        }
+      }
+
+      @include responsive(xs) {
+        padding-bottom: 60px;
+      }
+    }
+
+    &-button {
+      font-size: 16px;
+      font-weight: $second-font-weight;
+      padding: 9px 30px;
+      background: $trenary-bg-gradient;
+      font-family: $font-family;
+      border: 1px solid $green-color;
+      box-shadow: 3px 3px 6px $dark-green-color ;
+      border-radius: 22px;
+      color: $secondary-color;
+      transition: all 0.4s ease;
+
+      &:hover {
+        background-color: $primary-color;
+        color: $primary-color;
+        background: $secondary-color;
+        box-shadow: 0px 0px 9px 1px $secondary-color;
+        border-color: $secondary-color;
+      }
+
+      @include responsive(xs) {
+        padding: 9px 26px;
+        font-weight: $font-weight;
+      }
+    }
+
+    &-image {
+      width: 64px;
+      margin-left: auto;
+
+      @include responsive(xs) {
+        img {
+          width: 50px;
+        }
+      }
+
+      @include responsive(xxs) {
+        img {
+          width: 45px;
+        }
+      }
+    }  
+
+    &-footer {
+      @include flex(row, nowrap, flex-start, flex-end);
+      gap: 50px;
+      width: 100%;
+
+      h5 {
+        font-size: 16px;
+        margin-bottom: 9px;
+        font-weight: $font-weight;
+      }
+    }
+
+    &-specialists {
+      @include flex(column, nowrap, flex-start, flex-start);
+      gap: 3px;
+    }
+
+    &-specialist {
+      font-size: 18px;
+      font-weight: $second-font-weight;
+
+      @include responsive(xs) {
+        font-size: 16px;
+      }
+
+      @include responsive(xxs) {
+        font-size: 15px;
+      }
+    }
+  }
+}

@@ -24,8 +24,7 @@ const Hero = () => {
             <div className='hero__info-main'>
               <h1 className='hero__title'>MOCKINT - MOCK INTERVIEW</h1>
               <p className='hero__description'>SINOV INTERVYULAR TOPSHIRISH, BILIM VA TAJRIBANGIZNI SINASH,
-                SHUNINGDEK TAJRIBALI DASTURCHILARDAN "FEEDBACK"LAR OLISH UCHUN
-                MO’LJALLANGAN LOYIHA.
+                SHUNINGDEK TAJRIBALI DASTURCHILARDAN "FEEDBACK"LAR OLISH UCHUN MO'LJALLANGAN LOYIHA.
               </p>
               <HeroButton url={'#directions'} text={"INTERVYU TOPSHIRISH"} />
             </div>

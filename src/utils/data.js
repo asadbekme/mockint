@@ -4,7 +4,7 @@ const directionsCards = [
     id: 0,
     title: "ANGULAR",
     names: ["UMAR SADULLAEV"],
-    src: "../images/angular-icon.svg",
+    src: "../../images/angular-icon.svg",
     description:
       "Ushbu yo'nalish Angular freymvorkiga bag'ishlangan. Angularning o'zini so'ralishi bilan bir qatorda, biroz TypeScript va RxJS kutubxonalaridan ham savollar darajaga qarab so'raladi.",
   },
@@ -12,7 +12,7 @@ const directionsCards = [
     id: 1,
     title: "REACT.JS",
     names: ["AZIZBEK JONIBEKOV", "MUHAMMADRASUL NURMUKHAMEDOV", "OTABEK RIZAKULOV"],
-    src: "../images/react-icon.svg",
+    src: "../../images/react-icon.svg",
     description:
       "Ushbu yo'nalish React.js kutubxonasiga bag'ishlangan. Kandidat darajasiga qarab React.js ga aloqador mavzular so'raladi. Biladiganlar uchun Redux haqida savollar bo'lishi ham mumkin.",
   },
@@ -20,7 +20,7 @@ const directionsCards = [
     id: 2,
     title: "JAVA",
     names: ["YUSUF MURODOV"],
-    src: "../images/java-icon.svg",
+    src: "../../images/java-icon.svg",
     description:
       "Bu yo'nalishda Java tilining asosiy mavzulari, Spring freymvorki, Database va OOP, SOLID kabi mavzulardan savollarni kutishingiz mumkin.",
   },
@@ -28,7 +28,7 @@ const directionsCards = [
     id: 3,
     title: "NODE.JS",
     names: ["MABRUR KHAYITBOEV"],
-    src: "../images/nodejs-icon.svg",
+    src: "../../images/nodejs-icon.svg",
     description:
       "Ushbu yo'nalishimiz Node.js backend yo'nalishi bo'lib, Node.js o'zi, Express(yoki Nest.js) va Mongo(yoki Postgres) texnologiyalari tanlov asosida so'raladi.",
   },
@@ -36,7 +36,7 @@ const directionsCards = [
     id: 4,
     title: "PYTHON",
     names: ["BOBOSHER MUSURMONOV"],
-    src: "../images/python-icon.svg",
+    src: "../../images/python-icon.svg",
     description:
       "Ushbu bo'lim Python backend yo'nalishi bo'lib, Python Core, Django Framework va PostreSQL kabi texnologiyalardan savollar bo'ladi.",
   },
@@ -44,7 +44,7 @@ const directionsCards = [
     id: 5,
     title: "ANDROID",
     names: ["AXRORXO'JA YODGOROV"],
-    src: "../images/android-icon.svg",
+    src: "../../images/android-icon.svg",
     description:
       "Ushbu yo'nalish Android dasturchilari uchun hisoblanadi va Java, Kotlin, Android kabi texnologiyalardan savollar bo'ladi.",
   },
@@ -52,7 +52,7 @@ const directionsCards = [
     id: 6,
     title: "UMUMIY FRONTEND",
     names: ["AZIZBEK JONIBEKOV", "UMAR SADULLAEV"],
-    src: "../images/javascript-icon.svg",
+    src: "../../images/javascript-icon.svg",
     description:
       "Ushbu yo'nalish toza Frontend yo'nalishi. Hech qanday freymvorklarsiz. HTML, CSS, JS va shularga va umumiy Frontendga doir darajaga qarab chuqur savollar bo'ladi.",
   },
@@ -60,7 +60,7 @@ const directionsCards = [
     id: 7,
     title: "VUE.JS",
     names: ["MIRJALOL NORQULOV"],
-    src: "../images/vue-icon.svg",
+    src: "../../images/vue-icon.svg",
     description:
       "Ushbu yo'nalish Vue.js dasturchilari uchun mo'ljallangan. Yo'nalishda VueJs, VueRouter, NuxtJS, Vuex va shu kabi texnologiyalardan savollar bo'lishini kutishingiz mumkin.",
   },
@@ -68,7 +68,7 @@ const directionsCards = [
     id: 8,
     title: "PRODUCT/UX/UI DESIGN",
     names: ["BOBUR MAVLONOV"],
-    src: "../images/design-icon.svg",
+    src: "../../images/design-icon.svg",
     description:
       "Ushbu yo'nalish Product/UX/UI dizaynerlari uchun mo'ljallangan. Yo'nalishga topshirishda intervyu uchun avval qilgan ishlaringizdan namuna kerak bo'ladi.",
   },
@@ -76,7 +76,7 @@ const directionsCards = [
     id: 9,
     title: ".NET",
     names: ["Mukhammadkarim Tukhtaboev"],
-    src: "../images/dotnet.svg",
+    src: "../../images/dotnet.svg",
     description:
       "Bu yo'nalish .NET bo'lib, bunda .NET, ASP.NET, Patterns, SQL databases, RabbitMQ, Testing, Docker kabi texnologiya va mavzulardan savollar bo'ladi.",
   },

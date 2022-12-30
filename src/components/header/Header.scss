@@ -45,7 +45,7 @@
       z-index: 100;
       width: 100%;
       position: relative;
-      @include flex(row, space-between, center);
+      @include flex(row, nowrap, space-between, center);
     }
   }
 
@@ -57,7 +57,7 @@
     }
     
     &-links {
-      @include flex(row, space-between, center);
+      @include flex(row, nowrap, space-between, center);
     }
 
     &-item {
@@ -139,7 +139,7 @@
         z-index: 9999;
 
         &.open{
-            right: 0;
+          right: 0;
         }
 
         @include responsive(sm) {
@@ -156,7 +156,7 @@
       }
 
       &-links {
-        padding-top: 150px;
+        padding-top: 160px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
             -ms-flex-direction: column;

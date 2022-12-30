@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DirectionsCard = ({ names, title, description, src }) => {
+const DirectionsCard = ({ names, title, description, src, setIsOpenModal }) => {
   console.log(src);
 
   return (
@@ -20,7 +20,9 @@ const DirectionsCard = ({ names, title, description, src }) => {
               {
                 names.map((name, index) => {
                   return (
-                    <h4 key={index} className='directions__card-specialist'>{name}</h4>
+                    <h4 key={index} className='directions__card-specialist'>
+                      {name}
+                    </h4>
                   );
                 })
               }

@@ -6,16 +6,16 @@ const App = () => {
     <div className='app'>
       <Header />
 
-      {/* <main>
+      <main>
         <Directions />
         <About />
         <Video />
         <Specialists />
         <FAQ />
         <Partners />
-      </main> */}
+      </main>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
