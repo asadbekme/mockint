@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { MdOutlineClose } from "react-icons/md";
+import logo from '../../images/react-icon.svg';
 
-const DirectionsCard = ({ names, title, description, src, setIsOpenModal }) => {
+const DirectionsCard = ({ names, title, src, description, setIsOpenModal }) => {
+  const [isOpen, setIsOpen] = useState(false);
   console.log(src);
 
   return (
@@ -8,7 +11,10 @@ const DirectionsCard = ({ names, title, description, src, setIsOpenModal }) => {
       <div className="directions__card-main">
         <div className="directions__card-header">
           <h2 className='directions__card-title'>{title}</h2>
-          <button className='directions__card-button'>
+          <button 
+            className='directions__card-button'
+            onClick={() => setIsOpen(true)}
+          >
             BATAFSIL
           </button>
         </div>
@@ -29,8 +35,27 @@ const DirectionsCard = ({ names, title, description, src, setIsOpenModal }) => {
             </div>
           </div>
           <div className="directions__card-image">
-            <img src={src} alt="technology icon" />
+            <img src={logo} alt="technology icon" />
           </div>
+        </div>
+      </div>
+
+      <div className={isOpen ? "directions__card-overlay active--overlay" : "directions__card-overlay"}>
+        <div className="directions__card-overlay__header">
+          <h3 className="directions__card-overlay__title">{title}</h3>
+          <div
+            onClick={() => setIsOpen(false)}
+            className="directions__card-close__icon"
+          >
+            <MdOutlineClose />
+          </div>
+        </div>
+
+        <div className="directions__card-overlay__main">
+          <p className="directions__card-description">{description}</p>
+          <button  
+            onClick={() => setIsOpenModal(true)}
+            className="directions__card-button directions__card-overlay__button">TOPSHIRISH</button>
         </div>
       </div>
     </div>

@@ -1,0 +1,310 @@
+@import "../../scss/variables";
+
+.modal {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 99999;
+  max-width: 758px;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: $modal-main-gradient;
+  box-shadow: 10px 10px 80px $light-black-color-4;
+  border-radius: 25px;
+  display: none;
+
+  @include responsive(lg) {
+    max-width: 70vw;
+  }
+
+  @include responsive(md) {
+    max-width: 85vw;
+  }
+
+  &.modal--open {
+    display: block;
+  }
+
+  &__content {
+    @include flex(column, nowrap, center, center);
+    width: 100%;
+    text-align: center;
+  }
+
+  &__header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 37px;
+
+    @include flex(row, nowrap, space-between, center);
+    padding: 26px 40px 26px 45px;
+    background-color: $secondary-color;
+    border-radius: 25px 25px 0 0;
+
+    @include responsive(md) {
+      max-width: 100%;
+      padding: 22px 40px;
+    }
+
+    @include responsive(xxs) {
+      max-width: 100%;
+      margin-bottom: 20px;
+      padding: 15px 40px;
+    }
+  }
+
+  &__close-icon {
+    svg {
+      color: $primary-color;
+      font-size: 28px;
+
+      @include responsive(xs) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__body {
+    width: 100%;
+    @include flex(column, nowrap, center, center);
+    padding: 0 0 15px 0;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 1.4;
+    font-weight: $second-font-weight;
+    color: $primary-color;
+
+    @include responsive(md) {
+      font-size: 24px;
+    }
+
+    @include responsive(sm) {
+
+    }
+
+    @include responsive(xs) {
+      line-height: 1.2;
+      font-size: 26px;
+    }
+
+    @include responsive(xxs) {
+      font-size: 22px;
+    }
+
+    @include responsive(ss) {
+      font-size: 20px;
+    }
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    font-weight: $font-weight;
+    margin-inline: 20px;
+
+    @include responsive(md) {
+      font-size: 18px;
+    }
+
+    @include responsive(sm) {
+      font-size: 18px;
+    }
+
+    @include responsive(xs) {
+      font-size: 18px;
+    }
+
+    @include responsive(xxs) {
+      font-size: 16px;
+    }
+
+    @include responsive(ss) {
+      font-size: 16px;
+    }
+  }
+
+  &__card {
+    background-color:$white-color-2;
+    border-radius: 15px;
+    max-width: 598px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    color: $primary-color;
+    margin-bottom: 40px;
+
+    @include responsive(sm) {
+      max-width: 100%;
+    }
+
+    @include responsive(xs) {
+    }
+
+    @include responsive(xxs) {
+      margin-bottom: 20px;    
+    }
+
+    &-texts {
+      @include flex(row, wrap, space-evenly, center);
+      width: 100%;
+      text-align: center;
+      gap: 10px;
+      padding: 18px 45px 18px 38px;
+      // padding-right: 45px;
+    }
+
+    &-text {
+      font-size: 20px;
+      line-height: 1.2;
+      font-weight: $second-font-weight;
+      text-align: center;
+      text-transform: capitalize;
+
+      @include responsive(sm) {
+        font-size: 22px;
+        line-height: 1.4;
+      }
+
+      @include responsive(xs) {
+        font-size: 18px;
+        line-height: 1.4;
+      }
+
+      @include responsive(xxs) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__copy {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+    svg {
+      font-size: 24px;
+      transition: color .2s ease;
+    }
+
+    &:active {
+      svg {
+        color: $light-black-color-6;
+      }
+    }
+  }
+
+  &__button {
+    @include flex(row, nowrap, center, center);
+    gap: 5px;
+    padding: 13px 38px;
+    background:$interview-card-button-gradient;
+    border: 1px solid $green-color;
+    box-shadow: 0px 4px 4px $light-black-color-3;
+    border-radius: 25px;
+    max-width: 220px;
+    transition: all .4s ease;
+    font-size: 18px;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $primary-color;
+      background: $secondary-color;
+      box-shadow: 0px 0px 9px 1px $secondary-color;
+      border-color: $secondary-color;
+      
+      svg {
+        color: $primary-color;
+        font-size: 18px;
+      }
+
+      span {
+        color: $primary-color;
+        font-weight: $second-font-weight;
+      }
+    }
+
+    span,
+    svg {
+      color: $secondary-color;
+      font-size: 18px;
+        
+      @include responsive(xxs) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__footer {
+    width: 100%;
+    border-top: 1px solid $grey-color;
+    padding: 23px 0 35px 0;
+
+    @include responsive(md) {
+      padding: 22px 20px;
+      margin-bottom: 30px;
+    }
+
+    @include responsive(md) {
+      padding: 16px 10px;
+    }
+
+    &-text{
+      @include flex(column, nowrap, center, center);
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 1.1;
+      text-align: center;
+      @include responsive(sm) {
+        font-size: 16px;
+      } 
+
+      @include responsive(xxs) {
+        font-size: 14px;
+      }    
+    }
+
+    &-prices {
+      @include flex(row, wrap, center, center);
+      gap: 9px;
+      text-align: center;
+
+      h4 {
+        font-size: 20px;
+        line-height: 1.2;
+        font-weight: $font-weight;
+        @include responsive(sm) {
+          font-size: 18px;
+        } 
+
+        @include responsive(sm){
+          font-size: 16px;
+        } 
+
+        span{
+          font-size: inherit;
+          font-weight: $second-font-weight;
+        }
+      }
+    }
+  }
+
+  &__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99998;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: $light-black-color-5;
+    backdrop-filter: blur(7.5px);
+
+    &.show {
+      display: block;
+    }
+  }
+}

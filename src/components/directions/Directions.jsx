@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { directionsCards as cards } from '../../utils/data';
 import './Directions.scss';
 import DirectionsCard from './DirectionsCard';
+import Modal from '../modal/Modal';
 
 const Directions = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -18,15 +19,15 @@ const Directions = () => {
           <div className="directions__cards">
             {
               cards.map((card) => {
-                const { id, names, title, description, src } = card;
+                const { id, names, title, src, description } = card;
 
                 return (
                   <DirectionsCard
                     key={id}
                     names={names}
                     title={title}
-                    description={description}
                     src={src}
+                    description={description}
                     setIsOpenModal={setIsOpenModal}
                   />
                 );
@@ -35,6 +36,9 @@ const Directions = () => {
           </div>
         </div>
       </div>
+      {
+        isOpenModal ? <Modal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} /> : null
+      }
     </section>
   );
 }
