@@ -1,0 +1,124 @@
+@import "../../scss/variables";
+
+.about {
+  padding: 55px 0 160px 0;
+  background: $about-main-bg-gradient;
+  position: relative;
+
+  @include responsive(sm) {
+    padding-bottom: 100px;
+  }
+
+  @include responsive(xs) {
+    padding-bottom: 80px;
+  }
+
+  @include responsive(xxs) {
+    padding-bottom: 55px;
+  }
+
+  &__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    @include flex(column, nowrap, flex-start, center);
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 48px;
+    margin-bottom: 64px;
+
+    @include responsive(md) {
+      font-size: 38px;
+    }
+
+    @include responsive(sm) {
+      font-size: 32px;
+    }
+
+    @include responsive(xs) {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+
+    @include responsive(xxs) {
+      font-size: 20px;
+    }
+  }
+
+  &__cards {
+    width: 100%;
+    @include flex(column, nowrap, flex-start, flex-start);
+    gap: 20px;
+  }
+
+  &__card {
+    @include flex(row, nowrap, flex-start, center);
+    background: $secondary-color;
+    border: 3px solid $primary-color;
+    border-radius: 35px 35px 35px 0px;
+    gap: 21px;
+    padding: 30px 35px;
+    padding-right: 20px;
+    max-width: 565px;
+    width: 100%;
+    cursor: pointer;
+
+    @include responsive(sm) {
+      padding:25px 30px;
+    }
+
+    @include responsive(xs) {
+      align-items: flex-start;
+    }
+
+    @include responsive(xxs) {
+      padding: 16px 24px;
+    }
+
+    &:nth-child(even){
+      border-radius: 35px 35px 0px 35px;
+      margin-left: auto;
+    }
+
+    &-image{
+      width: 64px;
+    }
+
+    &-text {
+      @include flex(column, nowrap, flex-start, flex-start);
+      color: $primary-color;
+      font-weight: $font-weight;
+      display: inline-block;
+      font-size: 20px;
+        
+      span {
+        display: inline-block;
+        font-size: inherit;
+        font-weight: $second-font-weight;
+        color: inherit;
+      }
+
+      @include responsive(xs) {
+        font-size: 18px;
+      }
+
+      @include responsive(xxs) {
+        font-size: 16px;
+      }
+    }
+  }
+}

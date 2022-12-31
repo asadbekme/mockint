@@ -86,22 +86,22 @@ const directionsCards = [
 const aboutCards = [
   {
     id: 0,
-    src: "./images/about-card-1.png",
+    src: "../../images/about-card-1.png",
     text: `DASTURCHILARNI TEXNIK BILIM DARAJASINI HOLIS BAHOLASH`,
   },
   {
     id: 1,
-    src: "./images/about-card-2.png",
+    src: "../../images/about-card-2.png",
     text: `INTERVYU NATIJASIGA QARAB NOMZODGA KERAKLI FEEDBACK'LAR BERISH`,
   },
   {
     id: 2,
-    src: "./images/about-card-3.png",
+    src: "../../images/about-card-3.png",
     text: `O'ZBEKISTONDA INTERVYULAR O'TKAZISH ORQALI DASTURCHILAR SAVIYASINI OSHIRISH`,
   },
   {
     id: 3,
-    src: "./images/about-card-4.png",
+    src: "../../images/about-card-4.png",
     text: `INTERVYU OLUVCHI MUTAXASSISLAR SONINI OSHIRISH`,
   },
 ];

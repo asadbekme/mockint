@@ -4,7 +4,7 @@ import logo from '../../images/react-icon.svg';
 
 const DirectionsCard = ({ names, title, src, description, setIsOpenModal }) => {
   const [isOpen, setIsOpen] = useState(false);
-  console.log(src);
+  // console.log(src);
 
   return (
     <div className='directions__card'>
