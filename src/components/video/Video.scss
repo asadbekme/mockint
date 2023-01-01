@@ -1,0 +1,68 @@
+@import "../../scss/variables";
+
+.video {
+  padding: 111px 0 145px 0;
+
+  @include responsive(sm) {
+    padding: 90px 0;
+  }
+  
+  @include responsive(xs) {
+    padding: 80px 0 100px 0;
+  }
+
+  @include responsive(xxs) {
+    padding: 60px 0 90px 0;
+  }
+
+  &__content {
+    @include flex(column, nowrap, flex-start, center);
+    width: 100%;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.1;
+    margin-bottom: 50px;
+    text-align: center;
+    color: $primary-color;
+
+    @include responsive(xs) {
+      font-size: 26px;
+      margin-bottom: 35px;
+    }
+
+    @include responsive(xxs) {
+      font-size: 22px;
+      margin-bottom: 30px;
+    }
+  }
+
+  &__iframe {
+    height: 600px;
+    width: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+
+    iframe {
+      height: inherit !important;
+      width: inherit;
+      border-radius: inherit;
+    }
+
+    @include responsive(sm) {
+       height: 45vh;
+    }
+
+    @include responsive(xs) {
+       height: 40vh;
+       border-radius: 40px;
+    }
+    
+    @include responsive(xxs) {
+       height: 35vh;
+       border-radius: 30px  
+    }
+  }
+}

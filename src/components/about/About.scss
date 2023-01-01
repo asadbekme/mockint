@@ -60,9 +60,9 @@
   }
 
   &__cards {
-    width: 100%;
     @include flex(column, nowrap, flex-start, flex-start);
     gap: 20px;
+    width: 100%;
   }
 
   &__card {
@@ -78,7 +78,7 @@
     cursor: pointer;
 
     @include responsive(sm) {
-      padding:25px 30px;
+      padding: 25px 30px;
     }
 
     @include responsive(xs) {
@@ -89,7 +89,7 @@
       padding: 16px 24px;
     }
 
-    &:nth-child(even){
+    &:nth-child(even) {
       border-radius: 35px 35px 0px 35px;
       margin-left: auto;
     }
