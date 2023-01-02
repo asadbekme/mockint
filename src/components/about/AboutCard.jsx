@@ -2,7 +2,7 @@ import React from 'react';
 
 const AboutCard = ({ item }) => {
   const { src, text } = item;
-  console.log(item);
+  // console.log(src);
 
   return (
     <div className="about__card">

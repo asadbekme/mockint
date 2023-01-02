@@ -1,0 +1,259 @@
+@import "../../scss/variables";
+
+.specialists {
+  padding: 70px 0;
+  background: -o-linear-gradient(340.3deg, #0d7726 0%, #042f0e 100%);
+  background: linear-gradient(109.7deg, #0d7726 0%, #042f0e 100%);
+
+  &__content {
+    @include flex(column, nowrap, center, center);
+    width: 100%;
+    padding-bottom: 200px;
+
+    @include responsive(sm) {
+      padding-bottom: 150px;
+    }
+
+    @include responsive(xs) {
+      padding-bottom: 120px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 147px;
+
+    @include responsive(md) {
+      font-size: 36px;
+    }
+
+    @include responsive(sm) {
+      font-size: 32px;
+    }
+
+    @include responsive(xs) {
+      font-size: 26px;
+      margin-bottom: 115px;
+    }
+
+    @include responsive(xxs) {
+      font-size: 22px;
+      margin-bottom: 105px;
+    }
+  }
+
+  &__cards {
+    @include flex(row, wrap, center, stretch);
+    gap: 100px 55px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -ms-flex-wrap: wrap;
+
+    @include responsive(lg) {
+      gap: 100px 45px;
+    }
+  }
+
+  &__card {
+    @include flex(column, nowrap, space-between, center);
+    background-color: $secondary-color;
+    color: $primary-color;
+    border: 3px solid $primary-color;
+    border-radius: 25px;
+    padding-top: 0;
+    text-align: center;
+    position: relative;
+    flex-basis: 29%;
+    -ms-flex-preferred-size: 29%;
+
+    @include responsive(lg) {
+      flex-basis: 40%;
+      -ms-flex-preferred-size: 40%;
+    }
+
+    @include responsive(md) {
+      flex-basis: 46%;
+      -ms-flex-preferred-size: 46%;
+    }
+      
+    @include responsive(sm) {
+      flex-basis: auto;
+      -ms-flex-preferred-size: auto;
+      max-width: 390px;
+      width: 100%;
+    }
+
+    &-image {
+      margin-bottom: 24px;
+      height: 120px;
+  
+      @include responsive(xs) {
+        height: 95px;
+      }
+
+      @include responsive(xxs) {
+        height: 75px;
+      }
+    }
+
+    &-imgbox {
+      width: 193px;
+      height: 193px;
+      border-radius: 50%;
+      background-size: cover;
+      background-position: center;
+      border: 3px solid $primary-color;
+      position: relative;
+      top: -72px;
+      filter: drop-shadow(20px 20px 50px rgba(4, 47, 14, 0.38));
+      -webkit-filter: drop-shadow(20px 20px 50px rgba(4, 47, 14, 0.38));
+
+      @include responsive(xs) {
+        width: 170px;
+        height: 170px;
+      }
+
+      @include responsive(xxs) {
+        width: 150px;
+        height: 150px;
+      }
+
+      & > img {
+        height: 193px;
+        width: 193px;
+        object-fit: cover;
+        -o-object-fit: cover;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border: 3px solid $primary-color;
+      }
+    }
+
+    &-social {
+      width: 41px;
+      height: 41px;
+      position: absolute;
+      bottom: 6px;
+      right: 6px;
+  
+      @include responsive(xs) {
+        width: 38px;
+        height: 38px;
+      }
+
+      @include responsive(xxs) {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    &-main {
+      position: relative;
+      padding: 0 47px;
+      margin-bottom: 17px;
+  
+      @include responsive(lg) {
+        padding: 0 20px;
+      }
+    }
+
+    &-name {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 6px;
+  
+      @include responsive(xs) {
+        font-size: 20px;
+        line-height: 23px;
+      }
+
+      @include responsive(xxs) {
+        font-size: 18px;
+        line-height: 23px;
+      }
+    }
+
+    &-job {
+      line-height: 18px;
+      margin-bottom: 16px;
+    }
+
+    &-stacks {
+      @include flex(row, nowrap, center, center);
+      gap: 4px;
+      width: 100%;
+      margin-bottom: 29px;
+    }
+  
+    &-stack {
+      padding: 6px 14px;
+      background-color: $primary-color;
+      font-size: 15px;
+      border: 1px solid $green-color;
+      border-radius: 20px;
+      color: $secondary-color;
+      font-weight: $second-font-weight;
+      cursor: pointer;
+  
+      @include responsive(xxs) {
+        font-size: 14px;
+      }
+    }
+
+    &-experience {
+      font-size: 18px;
+        
+      span {
+        font-weight: $second-font-weight;
+        font-size: inherit;
+      }
+  
+      @include responsive(xxs) {
+        font-size: 16px;
+      }
+    }
+
+    &-level {
+      @include flex(column, nowrap, center, center);
+      gap: 4px;
+      font-size: 18px;
+      text-align: center;
+      margin-top: 15px;
+      font-weight: $font-weight;
+  
+      &__text {
+        font-weight: $second-font-weight;
+      }
+  
+      span {
+        font-size: inherit;
+      }
+  
+      @include responsive(xxs) {
+        font-size: 16px;
+      }
+    }  
+
+    &-line {
+      width: 100%;
+      height: 1px;
+      background: $primary-color;
+      margin-bottom: 48px;
+  
+      @include responsive(xs) {
+        margin-bottom: 34px;
+      }
+
+      @include responsive(xxs) {
+        margin-bottom: 28px;
+      }
+    }   
+  }
+}

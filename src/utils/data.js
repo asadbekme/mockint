@@ -1,10 +1,29 @@
+// * Import 
+// * Directions Cards Images
+import angularIcon from "../images/angular-icon.svg";
+import reactIcon from "../images/react-icon.svg";
+import javaIcon from "../images/java-icon.svg";
+import nodejsIcon from "../images/nodejs-icon.svg";
+import pythonIcon from "../images/python-icon.svg";
+import androidIcon from "../images/android-icon.svg";
+import frontendIcon from "../images/javascript-icon.svg";
+// import vueIcon from "../images/vue-icon.svg";
+// import productIcon from '../images/design-icon.svg';
+// import dotnetIcon from '../images/dotnet.svg';
+
+// * About Cards Images
+import aboutCard1 from "../images/about-card-1.png";
+import aboutCard2 from "../images/about-card-2.png";
+import aboutCard3 from "../images/about-card-3.png";
+import aboutCard4 from "../images/about-card-4.png";
+
 // * Directions Cards
 const directionsCards = [
   {
     id: 0,
     title: "ANGULAR",
     names: ["UMAR SADULLAEV"],
-    src: "../../images/angular-icon.svg",
+    src: angularIcon,
     description:
       "Ushbu yo'nalish Angular freymvorkiga bag'ishlangan. Angularning o'zini so'ralishi bilan bir qatorda, biroz TypeScript va RxJS kutubxonalaridan ham savollar darajaga qarab so'raladi.",
   },
@@ -12,7 +31,7 @@ const directionsCards = [
     id: 1,
     title: "REACT.JS",
     names: ["AZIZBEK JONIBEKOV", "MUHAMMADRASUL NURMUKHAMEDOV", "OTABEK RIZAKULOV"],
-    src: "../../images/react-icon.svg",
+    src: reactIcon,
     description:
       "Ushbu yo'nalish React.js kutubxonasiga bag'ishlangan. Kandidat darajasiga qarab React.js ga aloqador mavzular so'raladi. Biladiganlar uchun Redux haqida savollar bo'lishi ham mumkin.",
   },
@@ -20,7 +39,7 @@ const directionsCards = [
     id: 2,
     title: "JAVA",
     names: ["YUSUF MURODOV"],
-    src: "../../images/java-icon.svg",
+    src: javaIcon,
     description:
       "Bu yo'nalishda Java tilining asosiy mavzulari, Spring freymvorki, Database va OOP, SOLID kabi mavzulardan savollarni kutishingiz mumkin.",
   },
@@ -28,7 +47,7 @@ const directionsCards = [
     id: 3,
     title: "NODE.JS",
     names: ["MABRUR KHAYITBOEV"],
-    src: "../../images/nodejs-icon.svg",
+    src: nodejsIcon,
     description:
       "Ushbu yo'nalishimiz Node.js backend yo'nalishi bo'lib, Node.js o'zi, Express(yoki Nest.js) va Mongo(yoki Postgres) texnologiyalari tanlov asosida so'raladi.",
   },
@@ -36,7 +55,7 @@ const directionsCards = [
     id: 4,
     title: "PYTHON",
     names: ["BOBOSHER MUSURMONOV"],
-    src: "../../images/python-icon.svg",
+    src: pythonIcon,
     description:
       "Ushbu bo'lim Python backend yo'nalishi bo'lib, Python Core, Django Framework va PostreSQL kabi texnologiyalardan savollar bo'ladi.",
   },
@@ -44,7 +63,7 @@ const directionsCards = [
     id: 5,
     title: "ANDROID",
     names: ["AXRORXO'JA YODGOROV"],
-    src: "../../images/android-icon.svg",
+    src: androidIcon,
     description:
       "Ushbu yo'nalish Android dasturchilari uchun hisoblanadi va Java, Kotlin, Android kabi texnologiyalardan savollar bo'ladi.",
   },
@@ -52,56 +71,56 @@ const directionsCards = [
     id: 6,
     title: "UMUMIY FRONTEND",
     names: ["AZIZBEK JONIBEKOV", "UMAR SADULLAEV"],
-    src: "../../images/javascript-icon.svg",
+    src: frontendIcon,
     description:
       "Ushbu yo'nalish toza Frontend yo'nalishi. Hech qanday freymvorklarsiz. HTML, CSS, JS va shularga va umumiy Frontendga doir darajaga qarab chuqur savollar bo'ladi.",
   },
-  {
-    id: 7,
-    title: "VUE.JS",
-    names: ["MIRJALOL NORQULOV"],
-    src: "../../images/vue-icon.svg",
-    description:
-      "Ushbu yo'nalish Vue.js dasturchilari uchun mo'ljallangan. Yo'nalishda VueJs, VueRouter, NuxtJS, Vuex va shu kabi texnologiyalardan savollar bo'lishini kutishingiz mumkin.",
-  },
-  {
-    id: 8,
-    title: "PRODUCT/UX/UI DESIGN",
-    names: ["BOBUR MAVLONOV"],
-    src: "../../images/design-icon.svg",
-    description:
-      "Ushbu yo'nalish Product/UX/UI dizaynerlari uchun mo'ljallangan. Yo'nalishga topshirishda intervyu uchun avval qilgan ishlaringizdan namuna kerak bo'ladi.",
-  },
-  {
-    id: 9,
-    title: ".NET",
-    names: ["Mukhammadkarim Tukhtaboev"],
-    src: "../../images/dotnet.svg",
-    description:
-      "Bu yo'nalish .NET bo'lib, bunda .NET, ASP.NET, Patterns, SQL databases, RabbitMQ, Testing, Docker kabi texnologiya va mavzulardan savollar bo'ladi.",
-  },
+  // {
+  //   id: 7,
+  //   title: "VUE.JS",
+  //   names: ["MIRJALOL NORQULOV"],
+  //   src: vueIcon,
+  //   description:
+  //     "Ushbu yo'nalish Vue.js dasturchilari uchun mo'ljallangan. Yo'nalishda VueJs, VueRouter, NuxtJS, Vuex va shu kabi texnologiyalardan savollar bo'lishini kutishingiz mumkin.",
+  // },
+  // {
+  //   id: 8,
+  //   title: "PRODUCT/UX/UI DESIGN",
+  //   names: ["BOBUR MAVLONOV"],
+  //   src: productIcon,
+  //   description:
+  //     "Ushbu yo'nalish Product/UX/UI dizaynerlari uchun mo'ljallangan. Yo'nalishga topshirishda intervyu uchun avval qilgan ishlaringizdan namuna kerak bo'ladi.",
+  // },
+  // {
+  //   id: 9,
+  //   title: ".NET",
+  //   names: ["Mukhammadkarim Tukhtaboev"],
+  //   src: dotnetIcon,
+  //   description:
+  //     "Bu yo'nalish .NET bo'lib, bunda .NET, ASP.NET, Patterns, SQL databases, RabbitMQ, Testing, Docker kabi texnologiya va mavzulardan savollar bo'ladi.",
+  // },
 ];
   
 // * About Cards
 const aboutCards = [
   {
     id: 0,
-    src: "../../images/about-card-1.png",
+    src: aboutCard1,
     text: `DASTURCHILARNI TEXNIK BILIM DARAJASINI HOLIS BAHOLASH`,
   },
   {
     id: 1,
-    src: "../../images/about-card-2.png",
+    src: aboutCard2,
     text: `INTERVYU NATIJASIGA QARAB NOMZODGA KERAKLI FEEDBACK'LAR BERISH`,
   },
   {
     id: 2,
-    src: "../../images/about-card-3.png",
+    src: aboutCard3,
     text: `O'ZBEKISTONDA INTERVYULAR O'TKAZISH ORQALI DASTURCHILAR SAVIYASINI OSHIRISH`,
   },
   {
     id: 3,
-    src: "../../images/about-card-4.png",
+    src: aboutCard4,
     text: `INTERVYU OLUVCHI MUTAXASSISLAR SONINI OSHIRISH`,
   },
 ];
@@ -201,7 +220,7 @@ const specialistsCards = [
     src: "../images/otabek.jpg",
     url: "https://www.linkedin.com/in/otabek-rizakulov/",
     stacks: ["ReactJS", "Frontend"],
-    name: "Otabek",
+    name: "Otabek Rizakulov",
     job: "Frontend Engineer",
     experience: "3 yil+",
     level: "Junior - Middle",

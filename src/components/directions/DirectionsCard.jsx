@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { MdOutlineClose } from "react-icons/md";
-import logo from '../../images/react-icon.svg';
 
 const DirectionsCard = ({ names, title, src, description, setIsOpenModal }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,7 +34,7 @@ const DirectionsCard = ({ names, title, src, description, setIsOpenModal }) => {
             </div>
           </div>
           <div className="directions__card-image">
-            <img src={logo} alt="technology icon" />
+            <img src={src} alt="technology icon" />
           </div>
         </div>
       </div>
