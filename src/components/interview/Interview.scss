@@ -1,0 +1,186 @@
+@import '../../scss/variables';
+
+.interview {
+  &__content {
+    @include flex(column, nowrap, center, center);
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 1.3;
+    margin-bottom: 45px;
+
+    @include responsive(sm) {
+      font-size: 32px;
+    }
+
+    @include responsive(xs) {
+      font-size: 26px;
+    }
+
+    @include responsive(xxs) {
+      font-size: 22px;
+    }
+  }
+
+  &__cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 48px;
+    margin-bottom: 105px;
+
+    @include responsive(md) {
+      grid-gap: 30px;
+    }
+
+    @include responsive(sm) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @include responsive(xxs) {
+      margin-bottom: 70px;
+    }
+  }
+
+  &__card {
+    @include flex(column, nowrap, flex-start, flex-start);
+    gap: 6px;
+    border-radius: 15px;
+    background:$interview-card-gradient;
+    padding: 20px 36px;
+    color: $secondary-color;
+    box-shadow: 2px 4px 30px $light-black-color-2;
+    border: 1px solid $green-color;
+
+    @include responsive(xs) {
+      padding: 20px;
+    }
+
+    &-title {
+      font-size: 24px;
+      line-height: 1.2;
+      
+      @include responsive(xs) {
+        font-size: 18px;
+      }
+    }
+
+    &-description {
+      text-transform: uppercase;
+      line-height: 1.2;
+      
+      @include responsive(ss) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__prices {
+    @include flex(column, nowrap, center, center);
+    width: 100%;
+    text-align: center;
+
+    &-header {
+      @include flex(column, nowrap, center, center);
+      max-width: 476px;
+      text-align: center;
+      margin-bottom: 38px;
+    }
+
+    &-title {
+      font-size: 36px;
+      line-height: 1.3;
+      margin-bottom: 7px;
+
+      @include responsive(sm) {
+        font-size: 32px;
+      }
+
+      @include responsive(xs) {
+        font-size: 26px;
+      }
+
+      @include responsive(xxs) {
+        font-size: 24px;
+      }
+    }
+
+    &-subtitle {
+      font-size: 16px;
+      line-height: 1.1;
+      font-weight: $font-weight;
+    }
+
+    &-cards {
+      @include flex(row, nowrap, center, center);
+      gap: 23px;
+      width: 100%;
+      margin-bottom: 88px;
+
+      @include responsive(md) {
+        flex-wrap: wrap;
+      }
+
+      @include responsive(xs) {
+        margin-bottom: 65px;
+      }
+
+      @include responsive(xxs) {
+        margin-bottom: 50px;
+      }
+    }
+
+    &-card {
+      background: $interview-card-gradient;
+      border-radius: 15px;
+      border: 1px solid $green-color;
+      box-shadow: 2px 4px 30px $light-black-color-2;
+  
+      h3 {
+        font-size: 28px;
+        line-height: 1.1;
+        padding: 13px;
+        text-transform: uppercase;
+        font-weight: $font-weight;
+          
+        @include responsive(lg) {
+          font-size: 22px;
+        }
+
+        @include responsive(ss) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &-button {
+      max-width: 206px;
+      background:$interview-card-button-gradient;
+      margin: 0 auto;
+      font-size: 18px;
+      padding: 16px 48px;
+      border: 1px solid $green-color;
+      box-shadow: 0px 4px 4px $light-black-color-3;
+      border-radius: 25px;
+      color: $secondary-color;
+      transition: all 0.4s ease;
+  
+      &:hover {
+        background-color: $primary-color;
+        color: $primary-color;
+        background: $secondary-color;
+        box-shadow: 0px 0px 9px 1px $secondary-color;
+        border-color: $secondary-color;
+        font-weight: $second-font-weight;
+      }
+
+      @include responsive(xxs) {
+        padding: 13px 48px;
+        font-size: 16px;
+        font-family: $font-family;
+      }
+    }
+  }
+}

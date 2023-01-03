@@ -2,6 +2,7 @@ import React from 'react';
 import { specialistsCards } from '../../utils/data';
 import SpecialistsCard from './SpecialistsCard';
 import './Specialists.scss';
+import Interview from '../interview/Interview';
 
 const Specialists = () => {
   return (
@@ -20,6 +21,7 @@ const Specialists = () => {
             }
           </div>
         </div>
+        <Interview />
       </div>
     </section>
   );
