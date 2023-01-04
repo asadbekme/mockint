@@ -1,45 +1,45 @@
 @import '../../scss/variables';
 
 .FAQ {
-    color: #fff;
-    padding: 140px 0 160px 0;
+  color: $secondary-color;
+  padding: 140px 0 160px 0;
+
+  @include responsive(sm) {
+    padding: 110px 0;
+  }
+
+  @include responsive(xs) {
+    padding: 70px 0 100px 0;
+  }
+
+  &__content {
+    @include flex(column, nowrap, center, center);
+    width: 100%;
+  }
+
+  &__title {
+    color: $primary-color;
+    font-weight: $second-font-weight;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include responsive(md) {
+      font-size: 38px;
+    }
 
     @include responsive(sm) {
-        padding: 110px 0;
+      font-size: 32px;
     }
 
     @include responsive(xs) {
-        padding: 70px 0;
-        padding-bottom: 100px;
-    }
-    
-    &__content {
-        @include flex(center, center, column);
-        width: 100%;
+      font-size: 26px;
+      margin-bottom: 35px;
+      line-height: 1.3;
     }
 
-    &__title {
-        font-weight: 700;
-        color: $primary-color;
-        margin-bottom: 60px;
-        font-size: 48px;
-        text-align: center;
-        @include responsive(md) {
-           font-size: 38px;
-        }
-
-        @include responsive(sm) {
-            font-size: 32px;
-        }
-
-        @include responsive(xs) {
-            font-size: 26px;
-            margin-bottom: 35px;
-            line-height: 1.3;
-        }
-
-        @include responsive(xxs) {
-            font-size: 24px;
-        }
+    @include responsive(xxs) {
+      font-size: 24px;
     }
+  }
 }

@@ -1,0 +1,93 @@
+@import "../../scss/variables";
+
+.FAQ {
+  &__accordions {
+    @include flex(column, nowrap, flex-start, flex-start);
+    gap: 32px;
+    width: 100%;
+
+    @include responsive(xxs) {
+      gap: 25px;
+    }
+  }
+
+  &__accordion {
+    width: 100%;
+
+    &-header {
+      @include flex(row, nowrap, space-between, center);
+      background: $primary-color;
+      padding: 25px 50px;
+      border-radius: 25px 25px 0px 0px;
+      cursor: pointer;
+
+      @include responsive(sm) {
+        padding: 25px 30px;
+      }
+
+      @include responsive(xs) {
+        padding: 20px 30px;
+      }
+
+      @include responsive(ss) {
+        padding: 14px 26px;
+      }
+    }
+
+    &-title {
+      font-size: 21px;
+      line-height: 1.3;
+      font-weight: $font-weight;
+      text-transform: uppercase;
+      text-align: left;
+       
+      @include responsive(xs) {
+        font-size: 18px;
+      }
+    }
+
+    &-icon {
+      margin-left: auto;
+      transition: transform .4s ease;
+        
+      svg {
+        font-size: 26px;
+
+        @include responsive(sm) {
+          font-size: 22px;
+        }
+
+        @include responsive(xs) {
+          font-size: 20px;
+        }
+
+        @include responsive(xxs) {
+          font-size: 18px;
+        }
+      }
+    }
+
+    &-body {
+      display: none;
+      padding: 32px 50px 42px 50px;
+      background: $white-color;
+      font-size: 18px;
+      line-height: 24px;
+      color: $primary-color;
+      transition: all 2s ease;
+
+      @include responsive(xs) {
+        padding: 26px 26px 42px 26px;
+        font-size: 16px;
+      }
+
+      @include responsive(xxs) {
+        padding: 26px 26px 32px 26px;
+      }
+    }
+
+    &.show &-body {
+      display: block;
+    }
+  }
+}
