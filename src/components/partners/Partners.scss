@@ -1,0 +1,60 @@
+@import '../../scss/variables';
+
+.partners {
+  padding: 36px 0 150px 0;
+  background-color: $secondary-color;
+
+  @include responsive(xxs) {
+    padding-bottom: 120px;
+  }
+
+  &__content {
+    @include flex(column, nowrap, center, center);
+    width: 100%;
+  }
+
+  &__title {
+    font-size: 36px;
+    text-align: center;
+    font-weight: $second-font-weight;
+    line-height: 1.3;
+    color: $primary-color;
+    margin-bottom: 66px;
+    
+    @include responsive(sm) {
+      font-size: 28px;
+    }
+
+    @include responsive(xxs) {
+      font-size: 24px;
+      margin-bottom: 45px;       
+    }
+  }
+
+  &__items {
+    width: 100%;
+    @include flex(row, wrap, center, center);
+    gap: 63px;
+    
+    @include responsive(xxs) {
+      gap: 38px 20px;
+    }
+  }
+
+  &__item {
+    @include center();
+    width: 220px;
+    height: 65px;
+    text-align: center;
+
+    @include responsive(lg) {
+      width: 185px;
+      height: 60px;
+    }
+
+    @include responsive(xs) {
+      width: 145px;
+      height: 45px;
+    }
+  }
+}

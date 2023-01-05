@@ -17,6 +17,11 @@ import aboutCard2 from "../images/about-card-2.png";
 import aboutCard3 from "../images/about-card-3.png";
 import aboutCard4 from "../images/about-card-4.png";
 
+// * Partners items images
+import robocodeLogo from '../images/robocode-logo.svg';
+import webbrainLogo from '../images/webbrain-academy-logo.svg';
+import mohirdevLogo from '../images/mohirdev-logo.png';
+
 // * Directions Cards
 const directionsCards = [
   {
@@ -345,17 +350,17 @@ const accordionItems = [
 const partnersItems = [
   {
     id: 0,
-    src: "../images/robocode-logo.svg",
+    src: robocodeLogo,
     title: "Robocode"
   },
   {
     id: 1,
-    src: "../images/webbrain-academy-logo.svg",
+    src: webbrainLogo,
     title: "Webbrain Academy"
   },
   {
     id: 2,
-    src: "../images/mohirdev-logo.png",
+    src: mohirdevLogo,
     title: "Mohirdev"
   },
 ];
