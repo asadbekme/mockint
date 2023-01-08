@@ -1,6 +1,4 @@
 import React from 'react';
-import linkedinSocialSrc from '../../images/linkedin-icon.svg';
-import photoSrc from '../../images/umar.png';
 
 const SpecialistsCard = ({ item }) => {
   const { src, name, job, experience, level, stacks, url, socialSrc } = item;
@@ -9,9 +7,9 @@ const SpecialistsCard = ({ item }) => {
   return (
     <div className="specialists__card">
       <div className="specialists__card-image">
-        <div className="specialists__card-imgbox" style={{ backgroundImage: `url(${photoSrc})` }}>
+        <div className="specialists__card-imgbox" style={{ backgroundImage: `url(${src})` }}>
           <a href={url} className="specialists__card-social">
-            <img src={linkedinSocialSrc} alt="url" />
+            <img src={socialSrc} alt="url" />
           </a>
         </div>
       </div>

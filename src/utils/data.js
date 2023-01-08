@@ -17,7 +17,22 @@ import aboutCard2 from "../images/about-card-2.png";
 import aboutCard3 from "../images/about-card-3.png";
 import aboutCard4 from "../images/about-card-4.png";
 
-// * Partners items images
+// * Specialists Cards images
+// * linkedin logo
+import linkedinLogo from "../images/linkedin-icon.svg";
+import umarPhoto from "../images/umar.png";
+import mabrurPhoto from "../images/mabrur.jpg";
+import bobosherPhoto from "../images/bobosher.jpg";
+import mirjalolPhoto from "../images/mirjalol.jpg";
+import axrorxojaPhoto from "../images/axrorxoja.jpg";
+import muhammadrasulPhoto from "../images/muhammadrasul.jpg";
+import azizbekPhoto from "../images/azizbek.jpg";
+import yusufPhoto from "../images/yusuf.jpg";
+import otabekPhoto from "../images/otabek.jpg";
+import boburPhoto from "../images/bobur.jpg";
+import muhammadkarimPhoto from "../images/muhammadkarim.jpg";
+
+// * Partners Items images
 import robocodeLogo from '../images/robocode-logo.svg';
 import webbrainLogo from '../images/webbrain-academy-logo.svg';
 import mohirdevLogo from '../images/mohirdev-logo.png';
@@ -134,124 +149,124 @@ const aboutCards = [
 const specialistsCards = [
   {
     id: 0,
-    src: "../images/umar.png",
+    src: umarPhoto,
     url: "https://www.linkedin.com/in/joshdeveloper/",
     stacks: ["Angular", "Frontend"],
     name: "Umar Sadullayev",
     job: "Frontend Engineer",
     experience: "2.5 yil+",
     level: "Junior - Middle",
-    socialSrc: "./images/linkedin-icon.svg",
+    socialSrc: linkedinLogo,
   },
   {
     id: 1,
-    src: "../images/mabrur.jpg",
+    src: mabrurPhoto,
     url: "https://www.linkedin.com/in/mabrurdev/",
     stacks: ["NodeJS", "Backend"],
     name: "Mabrur Khayitboev",
     job: "Software Engineer",
     experience: "3 yil+",
     level: "Junior - Middle",
-    socialSrc: "./images/linkedin-icon.svg",
+    socialSrc: linkedinLogo,
   },
   {
     id: 2,
-    src: "../images/bobosher.jpg",
+    src: bobosherPhoto,
     url: "https://linkedin.com/in/bobosher-musurmonov",
     stacks: ["Python", "Backend"],
     name: "Bobosher Musurmonov",
     job: "Software engineer",
     experience: "2 yil+",
     level: "Junior - Middle",
-    socialSrc: "./images/linkedin-icon.svg",
+    socialSrc: linkedinLogo,
   },
   {
     id: 3,
-    src: "../images/mirjalol.jpg",
+    src: mirjalolPhoto,
     url: "https://www.linkedin.com/in/mirjalolnorkulov/",
     stacks: ["Vue JS", "Frontend"],
     name: "Mirjalol Norqulov",
     job: "Frontend Engineer",
     experience: "3 yil+",
     level: "Junior - Middle",
-    socialSrc: "./images/linkedin-icon.svg",
+    socialSrc: linkedinLogo,
   },
   {
     id: 4,
-    src: "../images/axrorxoja.jpg",
+    src: axrorxojaPhoto,
     url: "https://www.linkedin.com/in/axrorxoja-yodgorov",
     stacks: ["Mobile", "Android"],
     name: "Axrorxo'ja Yodgorov",
     job: "Lead Android Engineer",
     experience: "7 yil+",
     level: "Junior - Senior",
-    socialSrc: "./images/linkedin-icon.svg",
+    socialSrc: linkedinLogo,
   },
   {
     id: 5,
-    src: "../images/muhammadrasul.jpg",
+    src: muhammadrasulPhoto,
     url: "https://www.linkedin.com/in/nurmukhamedov/",
     stacks: ["React", "Frontend"],
     name: "Muhammadrasul Nurmukhamedov",
     job: "Frontend Engineer",
     experience: "2 yil+",
     level: "Junior - Middle",
-    socialSrc: "./images/linkedin-icon.svg",
+    socialSrc: linkedinLogo,
   },
   {
     id: 6,
-    src: "../images/azizbek.jpg",
+    src: azizbekPhoto,
     url: "https://www.linkedin.com/in/jonybekov/",
     stacks: ["React", "Frontend"],
     name: "Azizbek Jonibekov",
     job: "Frontend Engineer",
     experience: "4 yil+",
     level: "Junior - Middle",
-    socialSrc: "./images/linkedin-icon.svg",
+    socialSrc: linkedinLogo,
   },
   {
     id: 7,
-    src: "../images/yusuf.jpg",
+    src: yusufPhoto,
     url: "https://www.linkedin.com/in/yusuf-murodov/",
     stacks: ["Java", "Backend"],
     name: "Yusuf Murodov",
     job: "Software Engineer",
     experience: "1.5 yil+",
     level: "Junior - Middle",
-    socialSrc: "./images/linkedin-icon.svg",
+    socialSrc: linkedinLogo,
   },
   {
     id: 8,
-    src: "../images/otabek.jpg",
+    src: otabekPhoto,
     url: "https://www.linkedin.com/in/otabek-rizakulov/",
     stacks: ["ReactJS", "Frontend"],
     name: "Otabek Rizakulov",
     job: "Frontend Engineer",
     experience: "3 yil+",
     level: "Junior - Middle",
-    socialSrc: "./images/linkedin-icon.svg",
+    socialSrc: linkedinLogo,
   },
   {
     id: 9,
-    src: "../images/bobur.jpg",
+    src: boburPhoto,
     url: "https://www.linkedin.com/in/boburjon/",
     stacks: ["Product Design", "UX/UI Design"],
     name: "Bobur Mavlonov",
     job: "Product designer",
     experience: "1.5 yil+",
     level: "Junior - Middle",
-    socialSrc: "./images/linkedin-icon.svg",
+    socialSrc: linkedinLogo,
   },
   {
     id: 10,
-    src: "../images/muhammadkarim.jpg",
+    src: muhammadkarimPhoto,
     url: "https://www.linkedin.com/in/mukhammadkarim-tukhtaboev",
     stacks: ["Backend", ".NET"],
     name: "Mukhammadkarim Tukhtaboev",
     job: "Senior Software Engineer",
     experience: "6 yil+",
     level: "Junior - Middle - Senior",
-    socialSrc: "./images/linkedin-icon.svg",
+    socialSrc: linkedinLogo,
   },
 ];
   
