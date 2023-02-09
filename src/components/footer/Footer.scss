@@ -1,4 +1,4 @@
-@import '../../scss/variables';
+@import "../../assets/scss/variables";
 
 .footer {
   background: $footer-main-bg-gradient;
@@ -56,7 +56,7 @@
     @include responsive(xxs) {
       flex-direction: column;
     }
-  
+
     &-links {
       @include flex(column, nowrap, flex-start, flex-start);
       gap: 40px;
@@ -75,8 +75,8 @@
       font-size: 18px;
       line-height: 26px;
       text-transform: uppercase;
-        
-      &:hover{
+
+      &:hover {
         text-decoration: underline 1px solid;
       }
 
@@ -105,7 +105,7 @@
 
     @include responsive(xs) {
       padding: 25px 0;
-      font-size: 14px;    
+      font-size: 14px;
     }
   }
 }

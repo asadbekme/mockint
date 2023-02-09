@@ -1,4 +1,4 @@
-@import "../../scss/variables";
+@import "../../assets/scss/variables";
 
 .FAQ {
   &__accordions {
@@ -40,7 +40,7 @@
       font-weight: $font-weight;
       text-transform: uppercase;
       text-align: left;
-       
+
       @include responsive(xs) {
         font-size: 18px;
       }
@@ -48,8 +48,8 @@
 
     &-icon {
       margin-left: auto;
-      transition: transform .4s ease;
-        
+      transition: transform 0.4s ease;
+
       svg {
         font-size: 26px;
 

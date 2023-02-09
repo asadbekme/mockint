@@ -1,129 +1,111 @@
 // * Import 
-// * Directions Cards Images
-import angularIcon from "../images/angular-icon.svg";
-import reactIcon from "../images/react-icon.svg";
-import javaIcon from "../images/java-icon.svg";
-import nodejsIcon from "../images/nodejs-icon.svg";
-import pythonIcon from "../images/python-icon.svg";
-import androidIcon from "../images/android-icon.svg";
-import frontendIcon from "../images/javascript-icon.svg";
-// import vueIcon from "../images/vue-icon.svg";
-// import productIcon from '../images/design-icon.svg';
-// import dotnetIcon from '../images/dotnet.svg';
-
-// * About Cards Images
-import aboutCard1 from "../images/about-card-1.png";
-import aboutCard2 from "../images/about-card-2.png";
-import aboutCard3 from "../images/about-card-3.png";
-import aboutCard4 from "../images/about-card-4.png";
-
-// * Specialists Cards images
-// * linkedin logo
-import linkedinLogo from "../images/linkedin-icon.svg";
-import umarPhoto from "../images/umar.png";
-import mabrurPhoto from "../images/mabrur.jpg";
-import bobosherPhoto from "../images/bobosher.jpg";
-import mirjalolPhoto from "../images/mirjalol.jpg";
-import axrorxojaPhoto from "../images/axrorxoja.jpg";
-import muhammadrasulPhoto from "../images/muhammadrasul.jpg";
-import azizbekPhoto from "../images/azizbek.jpg";
-import yusufPhoto from "../images/yusuf.jpg";
-import otabekPhoto from "../images/otabek.jpg";
-import boburPhoto from "../images/bobur.jpg";
-import muhammadkarimPhoto from "../images/muhammadkarim.jpg";
-
-// * Partners Items images
-import robocodeLogo from '../images/robocode-logo.svg';
-import webbrainLogo from '../images/webbrain-academy-logo.svg';
-import mohirdevLogo from '../images/mohirdev-logo.png';
+import {
+  aboutCard1,
+  aboutCard2,
+  aboutCard3,
+  aboutCard4,
+  androidIcon,
+  angularIcon,
+  axrorxojaPhoto,
+  azizbekPhoto,
+  bobosherPhoto,
+  boburPhoto,
+  dotnetIcon,
+  frontendIcon,
+  javaIcon,
+  linkedinLogo,
+  mabrurPhoto,
+  mirjalolPhoto,
+  mohirdevLogo,
+  muhammadkarimPhoto,
+  muhammadrasulPhoto,
+  nodejsIcon,
+  otabekPhoto,
+  productIcon,
+  pythonIcon,
+  reactIcon,
+  robocodeLogo,
+  umarPhoto,
+  vueIcon,
+  webbrainLogo,
+  yusufPhoto
+} from "../assets/images";
 
 // * Directions Cards
-const directionsCards = [
-  {
+const directionsCards = [{
     id: 0,
     title: "ANGULAR",
     names: ["UMAR SADULLAEV"],
     src: angularIcon,
-    description:
-      "Ushbu yo'nalish Angular freymvorkiga bag'ishlangan. Angularning o'zini so'ralishi bilan bir qatorda, biroz TypeScript va RxJS kutubxonalaridan ham savollar darajaga qarab so'raladi.",
+    description: "Ushbu yo'nalish Angular freymvorkiga bag'ishlangan. Angularning o'zini so'ralishi bilan bir qatorda, biroz TypeScript va RxJS kutubxonalaridan ham savollar darajaga qarab so'raladi.",
   },
   {
     id: 1,
     title: "REACT.JS",
     names: ["AZIZBEK JONIBEKOV", "MUHAMMADRASUL NURMUKHAMEDOV", "OTABEK RIZAKULOV"],
     src: reactIcon,
-    description:
-      "Ushbu yo'nalish React.js kutubxonasiga bag'ishlangan. Kandidat darajasiga qarab React.js ga aloqador mavzular so'raladi. Biladiganlar uchun Redux haqida savollar bo'lishi ham mumkin.",
+    description: "Ushbu yo'nalish React.js kutubxonasiga bag'ishlangan. Kandidat darajasiga qarab React.js ga aloqador mavzular so'raladi. Biladiganlar uchun Redux haqida savollar bo'lishi ham mumkin.",
   },
   {
     id: 2,
     title: "JAVA",
     names: ["YUSUF MURODOV"],
     src: javaIcon,
-    description:
-      "Bu yo'nalishda Java tilining asosiy mavzulari, Spring freymvorki, Database va OOP, SOLID kabi mavzulardan savollarni kutishingiz mumkin.",
+    description: "Bu yo'nalishda Java tilining asosiy mavzulari, Spring freymvorki, Database va OOP, SOLID kabi mavzulardan savollarni kutishingiz mumkin.",
   },
   {
     id: 3,
     title: "NODE.JS",
     names: ["MABRUR KHAYITBOEV"],
     src: nodejsIcon,
-    description:
-      "Ushbu yo'nalishimiz Node.js backend yo'nalishi bo'lib, Node.js o'zi, Express(yoki Nest.js) va Mongo(yoki Postgres) texnologiyalari tanlov asosida so'raladi.",
+    description: "Ushbu yo'nalishimiz Node.js backend yo'nalishi bo'lib, Node.js o'zi, Express(yoki Nest.js) va Mongo(yoki Postgres) texnologiyalari tanlov asosida so'raladi.",
   },
   {
     id: 4,
     title: "PYTHON",
     names: ["BOBOSHER MUSURMONOV"],
     src: pythonIcon,
-    description:
-      "Ushbu bo'lim Python backend yo'nalishi bo'lib, Python Core, Django Framework va PostreSQL kabi texnologiyalardan savollar bo'ladi.",
+    description: "Ushbu bo'lim Python backend yo'nalishi bo'lib, Python Core, Django Framework va PostreSQL kabi texnologiyalardan savollar bo'ladi.",
   },
   {
     id: 5,
     title: "ANDROID",
     names: ["AXRORXO'JA YODGOROV"],
     src: androidIcon,
-    description:
-      "Ushbu yo'nalish Android dasturchilari uchun hisoblanadi va Java, Kotlin, Android kabi texnologiyalardan savollar bo'ladi.",
+    description: "Ushbu yo'nalish Android dasturchilari uchun hisoblanadi va Java, Kotlin, Android kabi texnologiyalardan savollar bo'ladi.",
   },
   {
     id: 6,
     title: "UMUMIY FRONTEND",
     names: ["AZIZBEK JONIBEKOV", "UMAR SADULLAEV"],
     src: frontendIcon,
-    description:
-      "Ushbu yo'nalish toza Frontend yo'nalishi. Hech qanday freymvorklarsiz. HTML, CSS, JS va shularga va umumiy Frontendga doir darajaga qarab chuqur savollar bo'ladi.",
+    description: "Ushbu yo'nalish toza Frontend yo'nalishi. Hech qanday freymvorklarsiz. HTML, CSS, JS va shularga va umumiy Frontendga doir darajaga qarab chuqur savollar bo'ladi.",
   },
   // {
   //   id: 7,
   //   title: "VUE.JS",
   //   names: ["MIRJALOL NORQULOV"],
   //   src: vueIcon,
-  //   description:
-  //     "Ushbu yo'nalish Vue.js dasturchilari uchun mo'ljallangan. Yo'nalishda VueJs, VueRouter, NuxtJS, Vuex va shu kabi texnologiyalardan savollar bo'lishini kutishingiz mumkin.",
+  //   description: "Ushbu yo'nalish Vue.js dasturchilari uchun mo'ljallangan. Yo'nalishda VueJs, VueRouter, NuxtJS, Vuex va shu kabi texnologiyalardan savollar bo'lishini kutishingiz mumkin.",
   // },
   // {
   //   id: 8,
   //   title: "PRODUCT/UX/UI DESIGN",
   //   names: ["BOBUR MAVLONOV"],
   //   src: productIcon,
-  //   description:
-  //     "Ushbu yo'nalish Product/UX/UI dizaynerlari uchun mo'ljallangan. Yo'nalishga topshirishda intervyu uchun avval qilgan ishlaringizdan namuna kerak bo'ladi.",
+  //   description: "Ushbu yo'nalish Product/UX/UI dizaynerlari uchun mo'ljallangan. Yo'nalishga topshirishda intervyu uchun avval qilgan ishlaringizdan namuna kerak bo'ladi.",
   // },
   // {
   //   id: 9,
   //   title: ".NET",
   //   names: ["Mukhammadkarim Tukhtaboev"],
   //   src: dotnetIcon,
-  //   description:
-  //     "Bu yo'nalish .NET bo'lib, bunda .NET, ASP.NET, Patterns, SQL databases, RabbitMQ, Testing, Docker kabi texnologiya va mavzulardan savollar bo'ladi.",
+  //   description: "Bu yo'nalish .NET bo'lib, bunda .NET, ASP.NET, Patterns, SQL databases, RabbitMQ, Testing, Docker kabi texnologiya va mavzulardan savollar bo'ladi.",
   // },
 ];
-  
+
 // * About Cards
-const aboutCards = [
-  {
+const aboutCards = [{
     id: 0,
     src: aboutCard1,
     text: `DASTURCHILARNI TEXNIK BILIM DARAJASINI HOLIS BAHOLASH`,
@@ -146,8 +128,7 @@ const aboutCards = [
 ];
 
 // * Specialists Cards
-const specialistsCards = [
-  {
+const specialistsCards = [{
     id: 0,
     src: umarPhoto,
     url: "https://www.linkedin.com/in/joshdeveloper/",
@@ -269,10 +250,9 @@ const specialistsCards = [
     socialSrc: linkedinLogo,
   },
 ];
-  
+
 // * Interview Cards
-const interviewCards = [
-  {
+const interviewCards = [{
     id: 0,
     title: "YO'NALISH TANLANG",
     description: "O'Z YO'NALISHINGIZNI TANLANG VA SAYTDAGI 'FAQ' BO'LIMI BILAN ALOHIDA TANISHING"
@@ -295,8 +275,7 @@ const interviewCards = [
 ];
 
 // * Interview Prices
-const interviewPrices = [
-  {
+const interviewPrices = [{
     id: 0,
     position: "JUNIOR",
     price: "199 000 SO'M"
@@ -310,12 +289,11 @@ const interviewPrices = [
     id: 3,
     position: "SENIOR",
     price: "399 000 SO'M"
-  },  
+  },
 ];
-  
+
 // * Accordion Items
-const accordionItems = [
-  {
+const accordionItems = [{
     id: 0,
     header: `KIMLAR TOPSHIRA OLMAYDI?`,
     description: `Junior yo'nalishiga dasturlashga kirganiga 6 oydan kam bo'lganlar, Middle yo'nalishga dasturlashdagi tajribasi 6 oydan kam bo'lganlar, Seniorga esa dasturlashdagi tajribasi 2 yil bo'lmaganlar topshira olmaydi.`
@@ -362,8 +340,7 @@ const accordionItems = [
   },
 ];
 
-const partnersItems = [
-  {
+const partnersItems = [{
     id: 0,
     src: robocodeLogo,
     title: "Robocode"
@@ -379,6 +356,14 @@ const partnersItems = [
     title: "Mohirdev"
   },
 ];
-  
+
 // * Export
-export { directionsCards, specialistsCards, aboutCards, interviewCards, interviewPrices, accordionItems, partnersItems };
+export {
+  directionsCards,
+  specialistsCards,
+  aboutCards,
+  interviewCards,
+  interviewPrices,
+  accordionItems,
+  partnersItems
+};

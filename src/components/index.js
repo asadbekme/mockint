@@ -6,3 +6,6 @@ export { default as Specialists } from './specialists/Specialists';
 export { default as FAQ } from './FAQ/FAQ';
 export { default as Partners } from './partners/Partners';
 export { default as Footer } from './footer/Footer';
+export { default as Modal } from './modal/Modal';
+export { default as Button } from './button/HeroButton';
+export { default as Interview } from './interview/Interview';

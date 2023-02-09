@@ -1,4 +1,4 @@
-@import '../../scss/variables';
+@import "../../assets/scss/variables";
 
 #header-placeholder {
   width: 100%;
@@ -36,9 +36,9 @@
     &.fixed--navbar {
       background: $green-color-2;
       -webkit-box-shadow: 0px 5px 15px $light-black-color;
-              box-shadow: 0px 5px 15px $light-black-color;
+      box-shadow: 0px 5px 15px $light-black-color;
       -webkit-backdrop-filter: blur(7.5px);
-              backdrop-filter: blur(7.5px);
+      backdrop-filter: blur(7.5px);
     }
 
     &-inner {
@@ -50,12 +50,11 @@
   }
 
   &__navigation {
-
     &-mobile {
       display: none;
       visibility: hidden;
     }
-    
+
     &-links {
       @include flex(row, nowrap, space-between, center);
     }
@@ -71,10 +70,10 @@
         background-color: $secondary-color;
         position: absolute;
         bottom: -6px;
-        content: '';
+        content: "";
         -webkit-transform-origin: center;
-            -ms-transform-origin: center;
-                transform-origin: center;
+        -ms-transform-origin: center;
+        transform-origin: center;
         -webkit-transition: 0.4s ease;
         -o-transition: 0.4s ease;
         transition: 0.4s ease;
@@ -91,7 +90,7 @@
           width: 48%;
         }
       }
-  
+
       @include responsive(lg) {
         margin: 0 14px;
       }
@@ -100,7 +99,7 @@
     &-link {
       color: $secondary-color;
       font-weight: $second-font-weight;
-  
+
       @include responsive(md) {
         font-size: 14px;
       }
@@ -119,26 +118,26 @@
         width: 60%;
         background: rgba(0, 0, 0, 0.76);
         -webkit-backdrop-filter: blur(5px);
-                backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
         top: 0px;
         right: -100%;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         padding: 20px 25px;
         -webkit-transition: right 0.8s ease;
         -o-transition: right 0.8s ease;
         transition: right 0.8s ease;
         z-index: 9999;
 
-        &.open{
+        &.open {
           right: 0;
         }
 
@@ -159,11 +158,11 @@
         padding-top: 160px;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         @include responsive(xxs) {
           padding-top: 70%;
         }
@@ -179,16 +178,16 @@
         font-weight: $second-font-weight;
       }
     }
-  }  
+  }
 
   .navbar__open-icon {
     display: none !important;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     cursor: pointer;
 
     img {
@@ -218,11 +217,11 @@
     cursor: pointer;
     display: none !important;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: 3px 11px;
     border-radius: 10px;
     position: absolute;

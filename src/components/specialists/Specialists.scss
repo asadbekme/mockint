@@ -1,4 +1,4 @@
-@import "../../scss/variables";
+@import "../../assets/scss/variables";
 
 .specialists {
   padding: 70px 0;
@@ -80,7 +80,7 @@
       flex-basis: 46%;
       -ms-flex-preferred-size: 46%;
     }
-      
+
     @include responsive(sm) {
       flex-basis: auto;
       -ms-flex-preferred-size: auto;
@@ -91,7 +91,7 @@
     &-image {
       height: 120px;
       margin-bottom: 24px;
-  
+
       @include responsive(xs) {
         height: 95px;
       }
@@ -142,7 +142,7 @@
       position: absolute;
       bottom: 6px;
       right: 6px;
-  
+
       @include responsive(xs) {
         width: 38px;
         height: 38px;
@@ -158,7 +158,7 @@
       position: relative;
       padding: 0 47px;
       margin-bottom: 17px;
-  
+
       @include responsive(lg) {
         padding: 0 20px;
       }
@@ -168,7 +168,7 @@
       font-size: 24px;
       line-height: 28px;
       margin-bottom: 6px;
-  
+
       @include responsive(xs) {
         font-size: 20px;
         line-height: 23px;
@@ -191,7 +191,7 @@
       width: 100%;
       margin-bottom: 29px;
     }
-  
+
     &-stack {
       padding: 6px 14px;
       background-color: $primary-color;
@@ -201,7 +201,7 @@
       color: $secondary-color;
       font-weight: $second-font-weight;
       cursor: pointer;
-  
+
       @include responsive(xxs) {
         font-size: 14px;
       }
@@ -209,12 +209,12 @@
 
     &-experience {
       font-size: 18px;
-        
+
       span {
         font-weight: $second-font-weight;
         font-size: inherit;
       }
-  
+
       @include responsive(xxs) {
         font-size: 16px;
       }
@@ -227,26 +227,26 @@
       text-align: center;
       margin-top: 15px;
       font-weight: $font-weight;
-  
+
       &__text {
         font-weight: $second-font-weight;
       }
-  
+
       span {
         font-size: inherit;
       }
-  
+
       @include responsive(xxs) {
         font-size: 16px;
       }
-    }  
+    }
 
     &-line {
       width: 100%;
       height: 1px;
       background: $primary-color;
       margin-bottom: 48px;
-  
+
       @include responsive(xs) {
         margin-bottom: 34px;
       }
@@ -254,6 +254,6 @@
       @include responsive(xxs) {
         margin-bottom: 28px;
       }
-    }   
+    }
   }
 }

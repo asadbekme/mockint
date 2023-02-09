@@ -5,7 +5,7 @@ import { modalCardContent, modalTexts } from "../../utils/constants";
 import { interviewPrices } from "../../utils/data";
 import { MdContentCopy } from "react-icons/md";
 import { TbBrandTelegram } from "react-icons/tb";
-import {IoMdCheckboxOutline} from "react-icons/io"
+import { IoMdCheckboxOutline } from "react-icons/io";
 import { CgClose } from "react-icons/cg";
 
 const Modal = ({ isOpenModal, setIsOpenModal }) => {
@@ -23,7 +23,7 @@ const Modal = ({ isOpenModal, setIsOpenModal }) => {
   const closeModal = () => {
     setCopyHandler(false);
     setIsOpenModal(false);
-  }
+  };
 
   return (
     <>
@@ -42,24 +42,22 @@ const Modal = ({ isOpenModal, setIsOpenModal }) => {
             </h5>
             <div className="modal__card">
               <div className="modal__card-texts">
-                {
-                  modalTexts.texts.map((modalText) => {
-                    const { id, content } = modalText;
+                {modalTexts.texts.map((modalText) => {
+                  const { id, content } = modalText;
 
-                    return (
-                      <h3 key={id} className="modal__card-text">
-                        {id + 1}. {content} 
-                      </h3>
-                    );
-                  })
-                }
+                  return (
+                    <h3 key={id} className="modal__card-text">
+                      {id + 1}. {content}
+                    </h3>
+                  );
+                })}
               </div>
               <div onClick={copyContent} className="modal__copy">
                 {copyHandler ? <IoMdCheckboxOutline /> : <MdContentCopy />}
               </div>
             </div>
             <a className="modal__button" href={modalTexts.contactUrl}>
-              <TbBrandTelegram />          
+              <TbBrandTelegram />
               <span>BOG'LANISH</span>
             </a>
           </div>
@@ -69,12 +67,13 @@ const Modal = ({ isOpenModal, setIsOpenModal }) => {
               Eslatma: Intervyu barcha yo'nalishlar bo'yicha quyidagi narxlarda:
             </h5>
             <div className="modal__footer-prices">
-              {interviewPrices.map(item=>{
-                const {id, price, position} = item;
+              {interviewPrices.map((item) => {
+                const { id, price, position } = item;
 
-                return(
+                return (
                   <h4 className="modal__footer-price" key={id}>
-                    <span>{position}</span>{" " + price} UZS
+                    <span>{position}</span>
+                    {" " + price} UZS
                   </h4>
                 );
               })}
@@ -85,6 +84,6 @@ const Modal = ({ isOpenModal, setIsOpenModal }) => {
       <Overlay show={isOpenModal} />
     </>
   );
-}
+};
 
 export default Modal;

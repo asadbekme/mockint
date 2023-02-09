@@ -1,4 +1,4 @@
-@import "../../scss/variables";
+@import "../../assets/scss/variables";
 
 .about {
   padding: 55px 0 160px 0;
@@ -94,7 +94,7 @@
       margin-left: auto;
     }
 
-    &-image{
+    &-image {
       width: 64px;
     }
 
@@ -104,7 +104,7 @@
       font-weight: $font-weight;
       display: inline-block;
       font-size: 20px;
-        
+
       span {
         display: inline-block;
         font-size: inherit;

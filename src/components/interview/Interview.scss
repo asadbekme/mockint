@@ -1,4 +1,4 @@
-@import '../../scss/variables';
+@import "../../assets/scss/variables";
 
 .interview {
   &__content {
@@ -48,7 +48,7 @@
     @include flex(column, nowrap, flex-start, flex-start);
     gap: 6px;
     border-radius: 15px;
-    background:$interview-card-gradient;
+    background: $interview-card-gradient;
     padding: 20px 36px;
     color: $secondary-color;
     box-shadow: 2px 4px 30px $light-black-color-2;
@@ -61,7 +61,7 @@
     &-title {
       font-size: 24px;
       line-height: 1.2;
-      
+
       @include responsive(xs) {
         font-size: 18px;
       }
@@ -70,7 +70,7 @@
     &-description {
       text-transform: uppercase;
       line-height: 1.2;
-      
+
       @include responsive(ss) {
         font-size: 14px;
       }
@@ -137,14 +137,14 @@
       border-radius: 15px;
       border: 1px solid $green-color;
       box-shadow: 2px 4px 30px $light-black-color-2;
-  
+
       h3 {
         font-size: 28px;
         line-height: 1.1;
         padding: 13px;
         text-transform: uppercase;
         font-weight: $font-weight;
-          
+
         @include responsive(lg) {
           font-size: 22px;
         }
@@ -157,7 +157,7 @@
 
     &-button {
       max-width: 206px;
-      background:$interview-card-button-gradient;
+      background: $interview-card-button-gradient;
       margin: 0 auto;
       font-size: 18px;
       padding: 16px 48px;
@@ -166,7 +166,7 @@
       border-radius: 25px;
       color: $secondary-color;
       transition: all 0.4s ease;
-  
+
       &:hover {
         background-color: $primary-color;
         color: $primary-color;

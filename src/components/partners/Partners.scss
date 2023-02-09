@@ -1,4 +1,4 @@
-@import '../../scss/variables';
+@import "../../assets/scss/variables";
 
 .partners {
   padding: 36px 0 150px 0;
@@ -20,14 +20,14 @@
     line-height: 1.3;
     color: $primary-color;
     margin-bottom: 66px;
-    
+
     @include responsive(sm) {
       font-size: 28px;
     }
 
     @include responsive(xxs) {
       font-size: 24px;
-      margin-bottom: 45px;       
+      margin-bottom: 45px;
     }
   }
 
@@ -35,7 +35,7 @@
     width: 100%;
     @include flex(row, wrap, center, center);
     gap: 63px;
-    
+
     @include responsive(xxs) {
       gap: 38px 20px;
     }

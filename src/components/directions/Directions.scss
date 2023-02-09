@@ -1,4 +1,4 @@
-@import "../../scss/variables";
+@import "../../assets/scss/variables";
 
 .directions {
   background-color: $secondary-color;
@@ -16,7 +16,7 @@
     width: 100%;
     @include flex(column, nowrap, center, center);
   }
- 
+
   &__header {
     @include flex(column, nowrap, center, center);
     max-width: 360px;
@@ -59,7 +59,7 @@
         font-size: 16px;
       }
     }
-  } 
+  }
 
   &__cards {
     @include flex(row, wrap, center, center);
@@ -69,7 +69,7 @@
     @include responsive(md) {
       flex-direction: column;
     }
-  } 
+  }
 
   &__card {
     background: $primary-bg-gradient;
@@ -85,7 +85,7 @@
       max-width: 550px;
       width: 100%;
 
-      &-main{
+      &-main {
         min-height: inherit;
       }
     }
@@ -149,7 +149,7 @@
       background: $trenary-bg-gradient;
       font-family: $font-family;
       border: 1px solid $green-color;
-      box-shadow: 3px 3px 6px $dark-green-color ;
+      box-shadow: 3px 3px 6px $dark-green-color;
       border-radius: 22px;
       color: $secondary-color;
       transition: all 0.4s ease;
@@ -183,7 +183,7 @@
           width: 45px;
         }
       }
-    }  
+    }
 
     &-footer {
       @include flex(row, nowrap, flex-start, flex-end);
@@ -225,48 +225,48 @@
       position: absolute;
       top: 100%;
       transition: top 0.4s ease;
-  
+
       &.active--overlay {
         top: 0;
       }
-  
+
       @include flex(column, nowrap, flex-start, center);
-  
+
       @include responsive(xs) {
         padding: 22px 16px;
       }
-  
+
       &__header {
         width: 100%;
         @include flex(row, nowrap, space-between, center);
         margin-bottom: 30px;
-  
+
         @include responsive(md) {
           margin-bottom: 15px;
         }
       }
-  
+
       &__title {
         font-size: 24px;
         font-weight: $second-font-weight;
-  
+
         @include responsive(xs) {
           font-size: 20px;
         }
       }
-  
+
       &__main {
         width: 100%;
         @include flex(column, nowrap, space-between, flex-end);
       }
-  
+
       &__button {
         position: absolute;
         bottom: 20px;
         right: 20px;
       }
     }
-    
+
     &-description {
       font-weight: $font-weight;
       overflow-y: auto;

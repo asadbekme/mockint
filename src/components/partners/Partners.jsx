@@ -10,22 +10,20 @@ const Partners = () => {
           <h2 className="partners__title">HAMKORLARIMIZ</h2>
 
           <div className="partners__items">
-            {
-              partnersItems.map((partnersItem) => {
-                const { id, src, title } = partnersItem;
+            {partnersItems.map((partnersItem) => {
+              const { id, src, title } = partnersItem;
 
-                return (
-                  <div key={id} className="partners__item">
-                    <img src={src} alt={title} />
-                  </div>
-                );
-              })
-            }
+              return (
+                <div key={id} className="partners__item">
+                  <img src={src} alt={title} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default Partners;

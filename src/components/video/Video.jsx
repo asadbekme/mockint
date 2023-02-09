@@ -1,15 +1,15 @@
-import React from 'react';
-import Iframe from 'react-iframe';
-import './Video.scss';
+import React from "react";
+import Iframe from "react-iframe";
+import "./Video.scss";
 
 const Video = () => {
   return (
-    <section className='video' id='video'>
+    <section className="video" id="video">
       <div className="container">
         <div className="video__content">
           <h2 className="video__title">VIDEONI ALBATTA KO'RING</h2>
           <div className="video__iframe">
-            <Iframe 
+            <Iframe
               url="https://www.youtube.com/embed/OziTdFRiThI"
               width="640px"
               height="320px"
@@ -26,6 +26,6 @@ const Video = () => {
       </div>
     </section>
   );
-}
+};
 
 export default Video;

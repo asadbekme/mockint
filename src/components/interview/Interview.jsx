@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
-import { interviewCards, interviewPrices } from '../../utils/data'; 
-import Modal from '../modal/Modal';
-import './Interview.scss';
-import InterviewCard from './InterviewCard';
-import InterviewPricesCard from './InterviewPricesCard';
+import React, { useState } from "react";
+import { interviewCards, interviewPrices } from "../../utils/data";
+import { Modal } from "../index";
+import "./Interview.scss";
+import InterviewCard from "./InterviewCard";
+import InterviewPricesCard from "./InterviewPricesCard";
 
 const Interview = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
@@ -14,14 +14,12 @@ const Interview = () => {
         <div className="interview__content">
           <h2 className="interview__title">INTERVYU TARTIBI</h2>
 
-          <div className="interview__cards" id='interview__cards'>
-            {
-              interviewCards.map((interviewCard) => {
-                return (
-                  <InterviewCard key={interviewCard.id} item={interviewCard} />
-                );
-              })
-            }
+          <div className="interview__cards" id="interview__cards">
+            {interviewCards.map((interviewCard) => {
+              return (
+                <InterviewCard key={interviewCard.id} item={interviewCard} />
+              );
+            })}
           </div>
 
           <div className="interview__prices" id="interview__prices">
@@ -32,15 +30,16 @@ const Interview = () => {
               </h4>
             </div>
             <div className="interview__prices-cards">
-              {
-                interviewPrices.map((item) => {
-                  return (
-                    <InterviewPricesCard key={item.id} item={item} />
-                  );
-                })
-              }
+              {interviewPrices.map((item) => {
+                return <InterviewPricesCard key={item.id} item={item} />;
+              })}
             </div>
-            <button className="interview__prices-button" onClick={() => setIsOpenModal(true)}>TOPSHIRISH</button>
+            <button
+              className="interview__prices-button"
+              onClick={() => setIsOpenModal(true)}
+            >
+              TOPSHIRISH
+            </button>
           </div>
         </div>
       </div>
@@ -48,6 +47,6 @@ const Interview = () => {
       <Modal isOpenModal={isOpenModal} setIsOpenModal={setIsOpenModal} />
     </div>
   );
-}
+};
 
 export default Interview;

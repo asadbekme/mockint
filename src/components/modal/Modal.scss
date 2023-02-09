@@ -1,4 +1,4 @@
-@import "../../scss/variables";
+@import "../../assets/scss/variables";
 
 .modal {
   position: fixed;
@@ -81,7 +81,6 @@
     }
 
     @include responsive(sm) {
-
     }
 
     @include responsive(xs) {
@@ -127,7 +126,7 @@
   }
 
   &__card {
-    background-color:$white-color-2;
+    background-color: $white-color-2;
     border-radius: 15px;
     max-width: 598px;
     width: 100%;
@@ -144,7 +143,7 @@
     }
 
     @include responsive(xxs) {
-      margin-bottom: 20px;    
+      margin-bottom: 20px;
     }
 
     &-texts {
@@ -186,7 +185,7 @@
 
     svg {
       font-size: 24px;
-      transition: color .2s ease;
+      transition: color 0.2s ease;
     }
 
     &:active {
@@ -200,12 +199,12 @@
     @include flex(row, nowrap, center, center);
     gap: 5px;
     padding: 13px 38px;
-    background:$interview-card-button-gradient;
+    background: $interview-card-button-gradient;
     border: 1px solid $green-color;
     box-shadow: 0px 4px 4px $light-black-color-3;
     border-radius: 25px;
     max-width: 220px;
-    transition: all .4s ease;
+    transition: all 0.4s ease;
     font-size: 18px;
 
     &:hover {
@@ -214,7 +213,7 @@
       background: $secondary-color;
       box-shadow: 0px 0px 9px 1px $secondary-color;
       border-color: $secondary-color;
-      
+
       svg {
         color: $primary-color;
         font-size: 18px;
@@ -230,7 +229,7 @@
     svg {
       color: $secondary-color;
       font-size: 18px;
-        
+
       @include responsive(xxs) {
         font-size: 16px;
       }
@@ -251,7 +250,7 @@
       padding: 16px 10px;
     }
 
-    &-text{
+    &-text {
       @include flex(column, nowrap, center, center);
       width: 100%;
       margin-bottom: 10px;
@@ -260,11 +259,11 @@
       text-align: center;
       @include responsive(sm) {
         font-size: 16px;
-      } 
+      }
 
       @include responsive(xxs) {
         font-size: 14px;
-      }    
+      }
     }
 
     &-prices {
@@ -278,13 +277,13 @@
         font-weight: $font-weight;
         @include responsive(sm) {
           font-size: 18px;
-        } 
+        }
 
-        @include responsive(sm){
+        @include responsive(sm) {
           font-size: 16px;
-        } 
+        }
 
-        span{
+        span {
           font-size: inherit;
           font-weight: $second-font-weight;
         }

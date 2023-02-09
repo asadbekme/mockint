@@ -7,6 +7,6 @@ const HeroInfoItem = ({ title, subtitle }) => {
       <p>{subtitle}</p>
     </div>
   );
-}
+};
 
 export default HeroInfoItem;

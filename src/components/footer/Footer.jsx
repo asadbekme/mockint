@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.scss';
-import logo from '../../images/site-logo.svg';
 import { headerNavigationItems as links, footerSocialLinks as socialLinks } from '../../utils/constants';
+import { logo } from '../../assets/images';
 
 const Footer = () => {
   return (

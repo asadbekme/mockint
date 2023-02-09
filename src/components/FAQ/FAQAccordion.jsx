@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import './Accordion.scss';
+import React, { useState } from "react";
 import { BsCaretDownFill, BsCaretUpFill } from "react-icons/bs";
+import "./Accordion.scss";
 
 const FAQAccordion = ({ item }) => {
   const [selected, setSelected] = useState(false);
@@ -12,7 +12,7 @@ const FAQAccordion = ({ item }) => {
     } else {
       setSelected(i);
     }
-  }
+  };
 
   return (
     <div className={selected ? "FAQ__accordion show" : "FAQ__accordion"}>
@@ -26,6 +26,6 @@ const FAQAccordion = ({ item }) => {
       <div className="FAQ__accordion-body">{description}</div>
     </div>
   );
-}
+};
 
 export default FAQAccordion;

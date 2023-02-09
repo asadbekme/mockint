@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const InterviewCard = ({ item }) => {
   const { id, title, description } = item;
@@ -8,11 +8,9 @@ const InterviewCard = ({ item }) => {
       <h4 className="interview__card-title">
         {id + 1}. {title}
       </h4>
-      <p className="interview__card-description">
-        {description}
-      </p>
+      <p className="interview__card-description">{description}</p>
     </div>
   );
-}
+};
 
 export default InterviewCard;
