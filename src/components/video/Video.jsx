@@ -1,6 +1,6 @@
 import React from "react";
 import Iframe from "react-iframe";
-import "./Video.scss";
+import "./video.scss";
 
 const Video = () => {
   return (

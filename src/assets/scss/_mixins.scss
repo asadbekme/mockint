@@ -6,13 +6,13 @@
   justify-content: $jc;
   align-items: $ai;
 }
-  
+
 @mixin center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-  
+
 @mixin transition($property, $duration, $timing-function) {
   transition: $property $duration $timing-function;
 }
@@ -25,14 +25,14 @@
 }
 
 .button-effect {
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 
   &:hover {
     transform: scale(1.095);
     border-radius: 6px;
   }
 }
-    
+
 // * Responsive media mixins
 @mixin responsive($breakpoint) {
   @if ($breakpoint == xxl) {
@@ -81,5 +81,5 @@
     @media screen and (max-width: 340px) {
       @content;
     }
-  } 
+  }
 }

@@ -1,9 +1,9 @@
 import React from "react";
 import { heroInfoItems as items } from "../../utils/constants";
-import HeroInfoItem from "./HeroInfoItem";
-import "./Hero.scss";
+import HeroInfoItem from "./hero-info-item";
+import "./hero.scss";
 import { BsChevronDown } from "react-icons/bs";
-import HeroButton from "../button/HeroButton";
+import HeroButton from "../button/hero-button";
 import { heroBg } from "../../assets/images";
 
 const Hero = () => {

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { directionsCards as cards } from "../../utils/data";
-import "./Directions.scss";
-import DirectionsCard from "./DirectionsCard";
-import { Modal } from '../index';
+import "./directions.scss";
+import DirectionsCard from "./directions-card";
+import { Modal } from "../index";
 
 const Directions = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);

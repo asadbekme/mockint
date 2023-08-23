@@ -1,8 +1,8 @@
 import React from "react";
 import { AboutBg } from "../../assets/images";
 import { aboutCards } from "../../utils/data";
-import "./About.scss";
-import AboutCard from "./AboutCard";
+import "./about.scss";
+import AboutCard from "./about-card";
 
 const About = () => {
   return (

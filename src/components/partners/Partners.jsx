@@ -1,5 +1,5 @@
 import React from "react";
-import "./Partners.scss";
+import "./partners.scss";
 import { partnersItems } from "../../utils/data";
 
 const Partners = () => {

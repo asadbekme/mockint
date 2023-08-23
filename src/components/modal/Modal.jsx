@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "./Modal.scss";
-import Overlay from "./Overlay";
+import "./modal.scss";
+import Overlay from "./overlay";
 import { modalCardContent, modalTexts } from "../../utils/constants";
 import { interviewPrices } from "../../utils/data";
 import { MdContentCopy } from "react-icons/md";

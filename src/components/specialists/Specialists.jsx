@@ -1,7 +1,7 @@
 import React from "react";
 import { specialistsCards } from "../../utils/data";
-import SpecialistsCard from "./SpecialistsCard";
-import "./Specialists.scss";
+import SpecialistsCard from "./specialists-card";
+import "./specialists.scss";
 import { Interview } from "../index";
 
 const Specialists = () => {

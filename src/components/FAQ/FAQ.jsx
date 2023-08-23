@@ -1,7 +1,7 @@
 import React from "react";
 import { accordionItems } from "../../utils/data";
-import "./FAQ.scss";
-import FAQAccordion from "./FAQAccordion";
+import "./faq.scss";
+import FAQAccordion from "./faq-accordion";
 
 const FAQ = () => {
   return (

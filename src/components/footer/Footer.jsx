@@ -1,7 +1,10 @@
-import React from 'react';
-import './Footer.scss';
-import { headerNavigationItems as links, footerSocialLinks as socialLinks } from '../../utils/constants';
-import { logo } from '../../assets/images';
+import React from "react";
+import "./footer.scss";
+import {
+  headerNavigationItems as links,
+  footerSocialLinks as socialLinks,
+} from "../../utils/constants";
+import { logo } from "../../assets/images";
 
 const Footer = () => {
   return (
@@ -20,39 +23,35 @@ const Footer = () => {
 
             <nav className="footer__navigation">
               <ul className="footer__navigation-links">
-                {
-                  links.map((link) => {
-                    const { id, url, text } = link;
+                {links.map((link) => {
+                  const { id, url, text } = link;
 
-                    return (
-                      <li key={id} className="footer__navigation-item">
-                        <a href={url} className="footer__navigation-link">
-                          {text}
-                        </a>
-                      </li>
-                    );
-                  })
-                }
+                  return (
+                    <li key={id} className="footer__navigation-item">
+                      <a href={url} className="footer__navigation-link">
+                        {text}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
 
               <ul className="footer__navigation-links">
-                {
-                  socialLinks.map((link) => {
-                    const { id, url, text } = link;
+                {socialLinks.map((link) => {
+                  const { id, url, text } = link;
 
-                    return (
-                      <li key={id} className="footer__navigation-item">
-                        <a href={url} className="footer__navigation-link">
-                          {text}
-                        </a>
-                      </li>
-                    );
-                  })
-                }
+                  return (
+                    <li key={id} className="footer__navigation-item">
+                      <a href={url} className="footer__navigation-link">
+                        {text}
+                      </a>
+                    </li>
+                  );
+                })}
               </ul>
             </nav>
           </div>
-        </div> 
+        </div>
       </div>
 
       <div className="footer__line"></div>
@@ -64,6 +63,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

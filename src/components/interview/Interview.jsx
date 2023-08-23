@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { interviewCards, interviewPrices } from "../../utils/data";
 import { Modal } from "../index";
-import "./Interview.scss";
-import InterviewCard from "./InterviewCard";
-import InterviewPricesCard from "./InterviewPricesCard";
+import "./interview.scss";
+import InterviewCard from "./interview-card";
+import InterviewPricesCard from "./interview-prices-card";
 
 const Interview = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);

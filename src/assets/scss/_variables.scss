@@ -2,16 +2,16 @@
 @import "./mixins";
 
 // * Font
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 
 // * Colors
-$primary-color: #0D7726;
+$primary-color: #0d7726;
 $secondary-color: #ffffff;
 $green-color: #12aa2e;
 $green-color-2: #034412cc;
 $dark-green-color: rgba(3, 38, 11, 0.63);
 $white-color: #eee;
-$white-color-2: #D9D9D9;
+$white-color-2: #d9d9d9;
 $grey-color: rgba(255, 255, 255, 0.33);
 $light-black-color: rgba(0, 0, 0, 0.19);
 $light-black-color-2: rgba(4, 47, 14, 0.38);
@@ -24,16 +24,28 @@ $light-black-color-6: rgb(33, 33, 33);
 $primary-bg-gradient: linear-gradient(102.86deg, #0d7726 0%, #042f0e 100%);
 $secondary-bg-gradient: linear-gradient(102.86deg, #0d7726 0%, #042f0e 100%);
 $trenary-bg-gradient: linear-gradient(93.52deg, #12aa2e 0%, #034412 100%);
-$header-main-bg-gradient: radial-gradient(63.04% 77.7% at 50% 50%, #0d7726 0%, #042f0e 100%);
-$about-main-bg-gradient: radial-gradient(50% 198.62% at 50% 50.06%, rgba(13, 119, 38, 0.9) 0%, rgba(4, 47, 14, 0.9) 100%);
+$header-main-bg-gradient: radial-gradient(
+  63.04% 77.7% at 50% 50%,
+  #0d7726 0%,
+  #042f0e 100%
+);
+$about-main-bg-gradient: radial-gradient(
+  50% 198.62% at 50% 50.06%,
+  rgba(13, 119, 38, 0.9) 0%,
+  rgba(4, 47, 14, 0.9) 100%
+);
 $footer-main-bg-gradient: linear-gradient(180deg, #1c1c1c 0%, #000000 100%);
 $interview-card-gradient: linear-gradient(180deg, #0d7726 0%, #034412 100%);
-$interview-card-button-gradient: linear-gradient(93.24deg, #0d7726 0%, rgba(4, 47, 14, 0.45) 100%);
-$modal-main-gradient: linear-gradient(180deg, #3D804C 0%, #074716 0.01%);
+$interview-card-button-gradient: linear-gradient(
+  93.24deg,
+  #0d7726 0%,
+  rgba(4, 47, 14, 0.45) 100%
+);
+$modal-main-gradient: linear-gradient(180deg, #3d804c 0%, #074716 0.01%);
 
 // * Typography
 $font-size: 16px;
-$font-family: 'Inter', sans-serif;
+$font-family: "Inter", sans-serif;
 $font-weight: 400;
 $line-height: 1;
 $color: $secondary-color;

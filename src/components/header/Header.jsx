@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Hero from "../hero/Hero";
-import "./Header.scss";
+import Navbar from "./navbar";
+import Hero from "../hero/hero";
+import "./header.scss";
 
 const Header = () => {
   return (

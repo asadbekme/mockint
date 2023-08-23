@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsCaretDownFill, BsCaretUpFill } from "react-icons/bs";
-import "./Accordion.scss";
+import "./accordion.scss";
 
 const FAQAccordion = ({ item }) => {
   const [selected, setSelected] = useState(false);
